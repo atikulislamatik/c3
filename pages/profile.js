@@ -8,8 +8,8 @@ const profile = () => {
     return (
         <div>
             <HeaderTwo/>
-            <Profile/>
-            <Post/>
+            {/* <Profile/>
+            <Post/> */}
             <Footer/>
         </div>
     );
