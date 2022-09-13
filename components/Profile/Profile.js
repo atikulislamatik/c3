@@ -24,25 +24,19 @@ const data = {
 };
 
 
-// const options = {
-//     title: {
-//         display: true,
-//         text: "Chart Title"
-//     },
-//     scales: {
-
-//         yAxes: [
-
-//             {
-//                 ticks: {
-//                     suggestedMin: 0,
-//                     suggestedMax: 100,
-//                     stepSize: 20
-//                 }
-//             }
-//         ]
-//     }
-// };
+export const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Line Chart',
+      },
+    },
+  };
+  
 
 
 const Profile = () => {
@@ -120,7 +114,7 @@ const Profile = () => {
                         <div className="col-lg-6">
                             <div className="chart-area">
                                 <h3>Engagement Rate Statistic</h3>
-                                {/* <Line data={data}  /> */}
+                                <Line options={options} data={data}  />
                             </div>
                         </div>
                     </div>
