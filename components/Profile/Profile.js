@@ -24,25 +24,25 @@ const data = {
 };
 
 
-const options = {
-    title: {
-        display: true,
-        text: "Chart Title"
-    },
-    scales: {
+// const options = {
+//     title: {
+//         display: true,
+//         text: "Chart Title"
+//     },
+//     scales: {
 
-        yAxes: [
+//         yAxes: [
 
-            {
-                ticks: {
-                    suggestedMin: 0,
-                    suggestedMax: 100,
-                    stepSize: 20
-                }
-            }
-        ]
-    }
-};
+//             {
+//                 ticks: {
+//                     suggestedMin: 0,
+//                     suggestedMax: 100,
+//                     stepSize: 20
+//                 }
+//             }
+//         ]
+//     }
+// };
 
 
 const Profile = () => {
@@ -120,7 +120,7 @@ const Profile = () => {
                         <div className="col-lg-6">
                             <div className="chart-area">
                                 <h3>Engagement Rate Statistic</h3>
-                                <Line data={data} options={options} />
+                                <Line data={data}  />
                             </div>
                         </div>
                     </div>
