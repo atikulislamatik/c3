@@ -8,14 +8,15 @@ import '../styles/style.css';
 import '../styles/responsive.css';
 
 import 'aos/dist/aos.css';
+import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      {/* <Layout> */}
+      <Layout>
         <Component {...pageProps} />
-      {/* </Layout> */}
+      </Layout>
     </>
   );
 }

@@ -1,7 +1,6 @@
 import Banner from "../components/Banner/Banner";
 import Events from "../components/Events/Events";
 import Footer from "../components/Footer/FooterTwo";
-import Header from "../components/Header/Header";
 import Tranding from "../components/Tranding/Tranding";
 import User from "../components/User/User";
 import Writers from "../components/Writers/Writers";
@@ -9,7 +8,7 @@ import Writers from "../components/Writers/Writers";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Banner />
       <Tranding />
       <Writers />
