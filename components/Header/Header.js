@@ -5,7 +5,7 @@ const Header = () => {
 
     return (
         <>
-            <nav className="navbar-area navbar navbar-expand-lg pt-4 pb-4">
+            <nav className="navbar-area navbar navbar-expand-lg pt-5 pb-5">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-2 col-5">
