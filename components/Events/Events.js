@@ -11,7 +11,7 @@ const Events = () => {
         <>
             <div className="events-area ptb-70">
                 <div className="container">
-                    <div className="row">
+                    <div className="row ">
                         <div className="title">
                             <h2>Upcoming <span>Event.</span></h2>
                             <hr />
@@ -20,7 +20,7 @@ const Events = () => {
 
                         <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
-                                <div className="row">
+                                <div className="row align-items-center">
                                     <div className="col-lg-5">
                                         <div className="img">
                                             <img src="/images/events/1.svg" alt="events" />
@@ -42,7 +42,7 @@ const Events = () => {
                         </div>
                         <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
-                                <div className="row">
+                                <div className="row align-items-center">
                                     <div className="col-lg-5">
                                         <div className="img">
                                             <img src="/images/events/2.svg" alt="events" />
@@ -64,7 +64,7 @@ const Events = () => {
                         </div>
                         <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
-                                <div className="row">
+                                <div className="row align-items-center">
                                     <div className="col-lg-5">
                                         <div className="img">
                                             <img src="/images/events/1.svg" alt="events" />
@@ -86,7 +86,7 @@ const Events = () => {
                         </div>
                         <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
-                                <div className="row">
+                                <div className="row align-items-center">
                                     <div className="col-lg-5">
                                         <div className="img">
                                             <img src="/images/events/2.svg" alt="events" />
@@ -108,7 +108,7 @@ const Events = () => {
                         </div>
                         <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
-                                <div className="row">
+                                <div className="row align-items-center">
                                     <div className="col-lg-5">
                                         <div className="img">
                                             <img src="/images/events/1.svg" alt="events" />
@@ -130,7 +130,7 @@ const Events = () => {
                         </div>
                         <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
-                                <div className="row">
+                                <div className="row align-items-center">
                                     <div className="col-lg-5">
                                         <div className="img">
                                             <img src="/images/events/2.svg" alt="events" />

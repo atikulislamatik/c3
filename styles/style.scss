@@ -168,7 +168,7 @@ textarea {
 
 // 
 .border-btn {
-    padding: 8px 25px;
+    padding: 16px 25px;
     border: 1px solid $main-color;
     font-size: 13px;
     text-transform: uppercase;
@@ -243,7 +243,7 @@ textarea {
 }
 
 .box-btn {
-    padding: 10px 25px;
+    padding: 16px 20px;
     background: $bg-color;
     color: #fff;
     text-transform: uppercase;
@@ -344,8 +344,9 @@ textarea {
     }
 
     h1 {
-        font-size: 85px;
+        font-size: 96px;
         color: #fff;
+        line-height: 120%;
 
         span {
             color: $main-color;
@@ -371,18 +372,19 @@ textarea {
                 font-size: 32px;
                 color: #fff;
                 font-weight: 500;
-                margin-bottom: 5px;
+                line-height: 48px !important;
+                margin-bottom: 10px;
                 line-height: normal;
             }
 
             span {
                 color: #A8ACB9;
-                font-size: 13px;
-                font-weight: 500;
+                font-size: 16px;
+                font-weight: 400;
             }
 
             .profile {
-                margin-top: 10px;
+                margin-top: 15px;
 
                 img {
                     width: 40px;
@@ -399,11 +401,13 @@ textarea {
 
                 a {
                     color: #fff;
+                    font-size: 16px;
                 }
 
                 .arrow-btn {
                     color: $main-color;
                     font-weight: 600;
+                    font-size: 20px;
 
                     i {
                         position: relative;
@@ -495,8 +499,9 @@ textarea {
     margin-bottom: 40px;
 
     h2 {
-        width: 25%;
-        font-size: 45px;
+        width: 48%;
+        font-size: 96px;
+        line-height: 120%;
         color: #0E0E0E;
 
         span {
@@ -505,7 +510,7 @@ textarea {
     }
 
     hr {
-        width: 68%;
+        width: 45%;
         margin-right: 2%;
     }
 
@@ -547,7 +552,8 @@ textarea {
             padding: 20px 0;
 
             h3 {
-                font-size: 23px;
+                font-size: 20px;
+                line-height: 30px;
                 color: #0E0E0E;
                 font-weight: 500;
                 margin-bottom: 5px;
@@ -558,8 +564,9 @@ textarea {
 
             span {
                 color: #A8ACB9;
-                font-size: 13px;
-                font-weight: 500;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
             }
 
             .profile {
@@ -580,11 +587,15 @@ textarea {
 
                 a {
                     color: #0E0E0E;
+                    font-size: 14px;
+                    line-height: 21px;
                 }
 
                 .arrow-btn {
                     color: $main-color;
                     font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
 
                     i {
                         position: relative;
@@ -606,9 +617,13 @@ textarea {
     }
 
     .box-btn {
+        font-size: 16px;
+        line-height: 24px;
+
         i {
             margin-left: 7px;
             margin-right: 0;
+            top: 3px;
         }
     }
 }
@@ -619,11 +634,11 @@ textarea {
         margin-bottom: 80px;
 
         h2 {
-            width: 30%;
+            width: 60%;
         }
 
         hr {
-            width: 63%;
+            width: 33%;
         }
 
     }
@@ -638,17 +653,17 @@ textarea {
         box-shadow: $box-shadow;
 
         .img {
-            width: 110px;
-            height: 110px;
+            width: 140px;
+            height: 140px;
             margin: 0 auto;
             margin-bottom: -35px;
             position: relative;
 
             img {
-                width: 110px;
-                height: 110px;
-                border: 2px solid #fff;
-                border-radius: 50px;
+                width: 140px;
+                height: 140px;
+                border: 8px solid #fff;
+                border-radius: 50%;
                 position: absolute;
                 top: -50px;
             }
@@ -676,14 +691,20 @@ textarea {
             text-align: center;
 
             h3 {
-                font-size: 22px;
+                font-size: 24px;
+                line-height: 36px;
+            }
+
+            span {
+                font-size: 16px;
+                line-height: 24px;
             }
         }
 
         .box-btn {
             margin-top: 20px;
             width: 100%;
-            padding: 15px 25px;
+            padding: 24px 120px;
 
             i {
                 color: #fff;
@@ -710,17 +731,18 @@ textarea {
 
     .title {
         h2 {
-            width: 30%;
+            width: 60%;
         }
 
         hr {
-            width: 63%;
+            width: 33%;
         }
+
 
     }
 
     hr {
-        max-width: 95%;
+        // max-width: 95%;
         margin-top: 25px;
     }
 
@@ -744,14 +766,15 @@ textarea {
             .date {
 
                 h6 {
-                    font-size: 35px;
-                    font-weight: 600;
+                    font-size: 40px;
+                    line-height: 40px;
+                    font-weight: 700;
                     font-style: italic;
                     margin-bottom: 5px;
 
                     span {
-                        font-weight: 400;
-                        font-size: 13px;
+                        font-weight: 600;
+                        font-size: 16px;
                         font-style: normal;
                         color: #363a43 !important;
                     }
@@ -764,17 +787,20 @@ textarea {
                 line-height: 30px;
                 transition: $transition;
                 cursor: pointer;
+                font-size: 20px;
             }
 
             p {
-                font-size: 13px;
+                font-size: 14px;
                 margin-bottom: 5px;
+                line-height: 21px;
             }
 
             .line-btn {
                 color: $main-color;
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 500;
+                line-height: 24px;
 
                 i {
                     font-size: 16px;
@@ -784,8 +810,9 @@ textarea {
                 }
             }
         }
-        &:hover{
-            h3{
+
+        &:hover {
+            h3 {
                 color: $main-color;
             }
         }
@@ -815,7 +842,7 @@ textarea {
             }
 
             h2 {
-                font-size: 80px;
+                font-size: 96px;
                 color: #fff;
 
                 span {
@@ -852,9 +879,16 @@ textarea {
 
         .content {
             h3 {
-                font-size: 18px;
+                font-size: 16px;
                 margin-bottom: 2px;
+                line-height: 24px;
                 font-weight: 500;
+            }
+
+            span {
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 600;
             }
         }
 
@@ -862,13 +896,15 @@ textarea {
             p {
                 margin-bottom: 0px;
                 font-size: 14px;
+                line-height: 21px;
 
             }
 
             span {
-                font-size: 16px;
+                font-size: 24px;
                 color: $main-color;
                 font-weight: 700;
+                line-height: 34px;
             }
         }
     }
@@ -1464,7 +1500,7 @@ textarea {
 
         h2 {
             margin-top: 20px;
-            font-size: 90px;
+            font-size: 96px;
             line-height: 120%;
             color: #fff;
 

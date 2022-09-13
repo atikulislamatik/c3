@@ -10,7 +10,7 @@ const Banner = () => {
                 <div className="container">
                     <div className="bg">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-7">
                                 <ul className='top-shape d-flex align-items-center justify-content-between'>
                                     <li><i className="ri-star-fill"></i></li>
                                     <li><img src="/images/shape/1.svg" alt="shape" /></li>
