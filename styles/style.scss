@@ -359,6 +359,8 @@ textarea {
 
         .img {
             height: 400px;
+            width: 100%;
+            overflow: hidden;
 
             img {
                 width: 100%;
@@ -533,7 +535,7 @@ textarea {
     .single-trand {
         position: relative;
         margin-bottom: 30px;
-        transition: 0.3s;
+        transition: 0.2s;
 
         .img {
             width: 100%;
@@ -549,7 +551,7 @@ textarea {
         }
 
         .content {
-            padding: 20px 0;
+            padding: 15px 0;
 
             h3 {
                 font-size: 20px;
@@ -586,9 +588,17 @@ textarea {
                 }
 
                 a {
-                    color: #0E0E0E;
-                    font-size: 14px;
-                    line-height: 21px;
+
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        color: #0E0E0E;
+                        font-size: 14px;
+                        line-height: 21px;
+                        font-weight: 600;
+                        margin-left: 8px;
+                    }
                 }
 
                 .arrow-btn {
@@ -612,7 +622,7 @@ textarea {
                 color: $main-color;
             }
 
-            transform: translateY(-10px) !important;
+            transform: translateY(-15px) !important;
         }
     }
 
@@ -662,7 +672,7 @@ textarea {
             img {
                 width: 140px;
                 height: 140px;
-                border: 8px solid #fff;
+                border: 2px solid #fff;
                 border-radius: 50%;
                 position: absolute;
                 top: -50px;
@@ -754,6 +764,7 @@ textarea {
         .img {
             height: 200px;
             width: 100%;
+            overflow: hidden;
 
             img {
                 height: 200px;
@@ -1032,7 +1043,7 @@ textarea {
 
                 i {
                     color: #fff;
-                    font-size: 20px;
+                    font-size: 18px;
                 }
 
                 line-height: 35px;
@@ -1061,20 +1072,22 @@ textarea {
         }
 
         .content {
-            padding: 20px 0;
+            padding: 15px 0;
 
             h3 {
-                font-size: 23px;
+                font-size: 20px;
                 color: #0E0E0E;
-                font-weight: 500;
+                font-weight: 600;
                 margin-bottom: 5px;
                 line-height: normal;
+                line-height: 30px;
             }
 
             span {
                 color: #A8ACB9;
-                font-size: 13px;
-                font-weight: 500;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
             }
 
             .profile {
@@ -1093,8 +1106,18 @@ textarea {
 
                 }
 
-                a {
-                    color: #0E0E0E;
+                a.pro-img {
+
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        color: #0E0E0E;
+                        font-size: 14px;
+                        line-height: 21px;
+                        font-weight: 600;
+                        margin-left: 8px;
+                    }
                 }
 
                 .arrow-btn {
@@ -1226,7 +1249,7 @@ textarea {
 
                 span {
                     background: #FFE2C8;
-                    padding: 8px 8px;
+                    padding: 8px 10px;
                     color: $main-color;
                 }
             }
@@ -1269,12 +1292,14 @@ textarea {
 
         .img {
             width: 100%;
-            height: 550px;
+            height: 585px;
+            overflow: hidden;
 
             img {
                 width: 100%;
-                height: 550px;
+                height: 585px;
                 object-fit: cover;
+                overflow: hidden;
             }
         }
 
@@ -1287,6 +1312,10 @@ textarea {
             }
 
         }
+    }
+
+    .shape.text-end {
+        margin-top: 110px;
     }
 
     .articel {
@@ -1340,7 +1369,7 @@ textarea {
     }
 
     .desc {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
 
         .key {
             li {
@@ -1353,7 +1382,7 @@ textarea {
 
                 span {
                     background: #D7DDF1;
-                    padding: 8px 8px;
+                    padding: 8px 10px;
                     font-weight: 500;
                     color: #0E0E0E;
                 }

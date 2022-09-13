@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Image from 'next/image';
 const Banner = () => {
     return (
         <>
@@ -27,7 +27,9 @@ const Banner = () => {
                                             <div className="row">
                                                 <div className="col-lg-8">
                                                     <div className="img">
-                                                        <img src="/images/banner.svg" alt="baner" />
+                                                        {/* <img src="/images/banner.svg" alt="baner" /> */}
+                                                        <Image src="/images/banner.svg" widthalt="" title="" width="735" height="400" layout="responsive" objectFit="cover" />
+
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-4">
@@ -35,13 +37,13 @@ const Banner = () => {
                                                         <h3>In nec arcu vel sem porttitor elementum ac vitae enim.</h3>
                                                         <span>September 02 , 2022</span>
                                                         <div className="profile">
-                                                           
-                                                           <Link href="/profile">
-                                                            <a href="">
-                                                                <img src="/images/user/1.png" alt="user" />
-                                                                Morbi Tristique
-                                                            </a>
-                                                           </Link>
+
+                                                            <Link href="/profile">
+                                                                <a href="">
+                                                                    <img src="/images/user/1.png" alt="user" />
+                                                                    Morbi Tristique
+                                                                </a>
+                                                            </Link>
                                                             <hr />
 
                                                             <a className="arrow-btn" href="#">Read more <i className="ri-arrow-right-s-line"></i></a>
@@ -55,8 +57,7 @@ const Banner = () => {
                                             <div className="row">
                                                 <div className="col-lg-8">
                                                     <div className="img">
-                                                        <img src="/images/banner1.jpg" alt="baner" />
-
+                                                        <Image src="/images/banner1.jpg" widthalt="" title="" width="735" height="400" layout="responsive" objectFit="cover" />
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-4">
@@ -65,13 +66,13 @@ const Banner = () => {
 
                                                         <span>September 02 , 2022</span>
                                                         <div className="profile">
-                                                           
-                                                           <Link href="/profile">
-                                                            <a href="">
-                                                                <img src="/images/user/1.png" alt="user" />
-                                                                Morbi Tristique
-                                                            </a>
-                                                           </Link>
+
+                                                            <Link href="/profile">
+                                                                <a href="">
+                                                                    <img src="/images/user/1.png" alt="user" />
+                                                                    Morbi Tristique
+                                                                </a>
+                                                            </Link>
                                                             <hr />
 
                                                             <a className="arrow-btn" href="#">Read more <i className="ri-arrow-right-s-line"></i></a>
@@ -80,8 +81,6 @@ const Banner = () => {
                                                 </div>
                                             </div>
                                         </SwiperSlide>
-
-
                                     </Swiper>
                                 </div>
                             </div>
@@ -95,3 +94,5 @@ const Banner = () => {
 };
 
 export default Banner;
+
+

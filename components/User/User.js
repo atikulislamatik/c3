@@ -1,7 +1,12 @@
 import AOS from 'aos';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import data from '../../data/data.json';
+
 const User = () => {
+
+    const [users, setUsers] = useState(data.users);
+
     useEffect(() => {
         AOS.init({
             duration: 1500
@@ -25,256 +30,37 @@ const User = () => {
                         </div>
                         <div className="col-lg-7">
                             <div className="row p-m">
-                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
-                                    <Link href="/profile" >
-                                        <div className="single-user">
-                                            <div className="row align-items-center">
-                                                <div className="col-3 pe-0">
-                                                    <div className="img">
-                                                        <img src="/images/user/1.png" alt="user" />
+                                {
+                                    users.map(users =>
+                                        <>
+                                            <div className="col-lg-6 col-md-6" data-aos="fade-in">
+                                                <Link href="/profile" >
+                                                    <div className="single-user">
+                                                        <div className="row align-items-center">
+                                                            <div className="col-3 pe-0">
+                                                                <div className="img">
+                                                                    <img src={users.url} alt="user" />
+                                                                </div>
+                                                            </div>
+                                                            <div className="col-6 ps-0">
+                                                                <div className="content">
+                                                                    <h3>{users.name}</h3>
+                                                                    <span>{users.username}</span>
+                                                                </div>
+                                                            </div>
+                                                            <div className="col-3">
+                                                                <div className="rank">
+                                                                    <p>Rank</p>
+                                                                    <span>#{users.id}</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div className="col-6 ps-0">
-                                                    <div className="content">
-                                                        <h3>Morbi Tristique</h3>
-                                                        <span>@morbitristique</span>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="rank">
-                                                        <p>Rank</p>
-                                                        <span>#1</span>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
-                                    <Link href="/profile" >
-                                        <div className="single-user">
-                                            <div className="row align-items-center">
-                                                <div className="col-3 pe-0">
-                                                    <div className="img">
-                                                        <img src="/images/user/2.png" alt="user" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6 ps-0">
-                                                    <div className="content">
-                                                        <h3>Morbi Tristique</h3>
-                                                        <span>@morbitristique</span>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="rank">
-                                                        <p>Rank</p>
-                                                        <span>#2</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
-                                    <Link href="/profile" >
-                                        <div className="single-user">
-                                            <div className="row align-items-center">
-                                                <div className="col-3 pe-0">
-                                                    <div className="img">
-                                                        <img src="/images/user/1.png" alt="user" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6 ps-0">
-                                                    <div className="content">
-                                                        <h3>Morbi Tristique</h3>
-                                                        <span>@morbitristique</span>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="rank">
-                                                        <p>Rank</p>
-                                                        <span>#1</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
-                                    <Link href="/profile" >
-                                        <div className="single-user">
-                                            <div className="row align-items-center">
-                                                <div className="col-3 pe-0">
-                                                    <div className="img">
-                                                        <img src="/images/user/2.png" alt="user" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6 ps-0">
-                                                    <div className="content">
-                                                        <h3>Morbi Tristique</h3>
-                                                        <span>@morbitristique</span>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="rank">
-                                                        <p>Rank</p>
-                                                        <span>#2</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
-                                    <Link href="/profile" >
-                                        <div className="single-user">
-                                            <div className="row align-items-center">
-                                                <div className="col-3 pe-0">
-                                                    <div className="img">
-                                                        <img src="/images/user/1.png" alt="user" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6 ps-0">
-                                                    <div className="content">
-                                                        <h3>Morbi Tristique</h3>
-                                                        <span>@morbitristique</span>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="rank">
-                                                        <p>Rank</p>
-                                                        <span>#1</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
-                                    <Link href="/profile" >
-                                        <div className="single-user">
-                                            <div className="row align-items-center">
-                                                <div className="col-3 pe-0">
-                                                    <div className="img">
-                                                        <img src="/images/user/2.png" alt="user" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6 ps-0">
-                                                    <div className="content">
-                                                        <h3>Morbi Tristique</h3>
-                                                        <span>@morbitristique</span>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="rank">
-                                                        <p>Rank</p>
-                                                        <span>#2</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
-                                    <Link href="/profile" >
-                                        <div className="single-user">
-                                            <div className="row align-items-center">
-                                                <div className="col-3 pe-0">
-                                                    <div className="img">
-                                                        <img src="/images/user/1.png" alt="user" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6 ps-0">
-                                                    <div className="content">
-                                                        <h3>Morbi Tristique</h3>
-                                                        <span>@morbitristique</span>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="rank">
-                                                        <p>Rank</p>
-                                                        <span>#1</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
-                                    <Link href="/profile" >
-                                        <div className="single-user">
-                                            <div className="row align-items-center">
-                                                <div className="col-3 pe-0">
-                                                    <div className="img">
-                                                        <img src="/images/user/2.png" alt="user" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6 ps-0">
-                                                    <div className="content">
-                                                        <h3>Morbi Tristique</h3>
-                                                        <span>@morbitristique</span>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="rank">
-                                                        <p>Rank</p>
-                                                        <span>#2</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
-                                    <Link href="/profile" >
-                                        <div className="single-user">
-                                            <div className="row align-items-center">
-                                                <div className="col-3 pe-0">
-                                                    <div className="img">
-                                                        <img src="/images/user/1.png" alt="user" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6 ps-0">
-                                                    <div className="content">
-                                                        <h3>Morbi Tristique</h3>
-                                                        <span>@morbitristique</span>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="rank">
-                                                        <p>Rank</p>
-                                                        <span>#1</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
-                                    <Link href="/profile" >
-                                        <div className="single-user">
-                                            <div className="row align-items-center">
-                                                <div className="col-3 pe-0">
-                                                    <div className="img">
-                                                        <img src="/images/user/2.png" alt="user" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6 ps-0">
-                                                    <div className="content">
-                                                        <h3>Morbi Tristique</h3>
-                                                        <span>@morbitristique</span>
-                                                    </div>
-                                                </div>
-                                                <div className="col-3">
-                                                    <div className="rank">
-                                                        <p>Rank</p>
-                                                        <span>#2</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
+                                        </>)
+                                }
+
                             </div>
                         </div>
                     </div>

@@ -21,7 +21,7 @@ const Writers = () => {
                         <div className="col-lg-4">
                             <div className="single-item" data-aos="fade-in">
                                 <div className="img">
-                                    <img src="/images/user/1.png" alt="user" />
+                                    <img src="/images/user/1.svg" alt="user" />
                                     <div className="badge">
                                         <div>1</div>
                                     </div>
@@ -36,7 +36,7 @@ const Writers = () => {
                         <div className="col-lg-4">
                             <div className="single-item" data-aos="fade-in">
                                 <div className="img">
-                                    <img src="/images/user/2.png" alt="user" />
+                                    <img src="/images/user/2.svg" alt="user" />
                                     <div className="badge">
                                         <div>2</div>
                                     </div>
@@ -51,7 +51,7 @@ const Writers = () => {
                         <div className="col-lg-4">
                             <div className="single-item lc" data-aos="fade-in">
                                 <div className="img">
-                                    <img src="/images/user/3.png" alt="user" />
+                                    <img src="/images/user/3.svg" alt="user" />
                                     <div className="badge">
                                         <div>3</div>
                                     </div>

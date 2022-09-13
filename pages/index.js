@@ -8,7 +8,7 @@ import Writers from "../components/Writers/Writers";
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
+    
       <Banner />
       <Tranding />
       <Writers />

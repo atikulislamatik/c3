@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Articel from '../Article/Articel';
+import Image from 'next/image';
 const Details = () => {
     return (
         <>
@@ -13,7 +14,8 @@ const Details = () => {
                                     <a className='back' href="#"><i className="ri-arrow-left-s-line"></i> Back to previous page</a>
                                 </Link>
                                 <div className="img">
-                                    <img src="/images/details.svg" alt="details" />
+                                    <Image src="/images/details.svg" widthalt="" title="details" width="100%" height="100%" layout="responsive" objectFit="cover"/>
+
                                 </div>
                                 <div className="content">
                                     <h3>In nec arcu vel sem porttitor elementum ac vitae enim.</h3>

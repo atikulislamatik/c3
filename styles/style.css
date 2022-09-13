@@ -359,6 +359,8 @@ textarea.form-control {
 
 .banner-area .single-swiper .img {
   height: 400px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .banner-area .single-swiper .img img {
@@ -535,8 +537,8 @@ textarea.form-control {
 .tranding-area .single-trand {
   position: relative;
   margin-bottom: 30px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .tranding-area .single-trand .img {
@@ -555,7 +557,7 @@ textarea.form-control {
 }
 
 .tranding-area .single-trand .content {
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .tranding-area .single-trand .content h3 {
@@ -594,9 +596,20 @@ textarea.form-control {
 }
 
 .tranding-area .single-trand .content .profile a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tranding-area .single-trand .content .profile a span {
   color: #0E0E0E;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 600;
+  margin-left: 8px;
 }
 
 .tranding-area .single-trand .content .profile .arrow-btn {
@@ -614,8 +627,8 @@ textarea.form-control {
 }
 
 .tranding-area .single-trand:hover {
-  -webkit-transform: translateY(-10px) !important;
-          transform: translateY(-10px) !important;
+  -webkit-transform: translateY(-15px) !important;
+          transform: translateY(-15px) !important;
 }
 
 .tranding-area .single-trand:hover h3 {
@@ -667,7 +680,7 @@ textarea.form-control {
 .writers-area .single-item .img img {
   width: 140px;
   height: 140px;
-  border: 8px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
   position: absolute;
   top: -50px;
@@ -754,6 +767,7 @@ textarea.form-control {
 .events-area .single-event .img {
   height: 200px;
   width: 100%;
+  overflow: hidden;
 }
 
 .events-area .single-event .img img {
@@ -1021,7 +1035,7 @@ textarea.form-control {
 
 .post-area .single-post .btns a i {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .post-area .single-post .btns .edit {
@@ -1048,21 +1062,23 @@ textarea.form-control {
 }
 
 .post-area .single-post .content {
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .post-area .single-post .content h3 {
-  font-size: 23px;
+  font-size: 20px;
   color: #0E0E0E;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 5px;
   line-height: normal;
+  line-height: 30px;
 }
 
 .post-area .single-post .content span {
   color: #A8ACB9;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .post-area .single-post .content .profile {
@@ -1081,8 +1097,21 @@ textarea.form-control {
   margin-top: 15px;
 }
 
-.post-area .single-post .content .profile a {
+.post-area .single-post .content .profile a.pro-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post-area .single-post .content .profile a.pro-img span {
   color: #0E0E0E;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  margin-left: 8px;
 }
 
 .post-area .single-post .content .profile .arrow-btn {
@@ -1211,7 +1240,7 @@ textarea.form-control {
 
 .details-area .details-content .hash li span {
   background: #FFE2C8;
-  padding: 8px 8px;
+  padding: 8px 10px;
   color: #EB7F1B;
 }
 
@@ -1249,14 +1278,16 @@ textarea.form-control {
 
 .details-area .details-content .img {
   width: 100%;
-  height: 550px;
+  height: 585px;
+  overflow: hidden;
 }
 
 .details-area .details-content .img img {
   width: 100%;
-  height: 550px;
+  height: 585px;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 
 .details-area .details-content .content h3 {
@@ -1264,6 +1295,10 @@ textarea.form-control {
   line-height: 48px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.details-area .shape.text-end {
+  margin-top: 110px;
 }
 
 .details-area .articel {
@@ -1316,7 +1351,7 @@ textarea.form-control {
 }
 
 .details-area .desc {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .details-area .desc .key li {
@@ -1330,7 +1365,7 @@ textarea.form-control {
 
 .details-area .desc .key li span {
   background: #D7DDF1;
-  padding: 8px 8px;
+  padding: 8px 10px;
   font-weight: 500;
   color: #0E0E0E;
 }
