@@ -9,13 +9,13 @@ import Writers from "../components/Writers/Writers";
 export default function Home() {
   return (
     <>
-    <Header/>
+      <Header />
       <Banner />
-      <Tranding/>
-      <Writers/>
-      <Events/>
-     <User/>
-     <Footer/>
+      <Tranding />
+      <Writers />
+      <Events />
+      <User />
+      <Footer />
     </>
   )
 }

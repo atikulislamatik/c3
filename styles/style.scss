@@ -553,6 +553,7 @@ textarea {
                 margin-bottom: 5px;
                 line-height: normal;
                 cursor: pointer;
+                transition: $transition;
             }
 
             span {
@@ -596,7 +597,18 @@ textarea {
         }
 
         &:hover {
-            transform: translateY(-10px);
+            h3 {
+                color: $main-color;
+            }
+
+            transform: translateY(-10px) !important;
+        }
+    }
+
+    .box-btn {
+        i {
+            margin-left: 7px;
+            margin-right: 0;
         }
     }
 }
@@ -715,6 +727,7 @@ textarea {
     .single-event {
         position: relative;
         margin-bottom: 25px;
+        transition: $transition;
 
         .img {
             height: 200px;
@@ -749,6 +762,8 @@ textarea {
                 @include line-clip;
                 -webkit-line-clamp: 3;
                 line-height: 30px;
+                transition: $transition;
+                cursor: pointer;
             }
 
             p {
@@ -767,6 +782,11 @@ textarea {
                     top: 4px;
                     margin-left: 3px;
                 }
+            }
+        }
+        &:hover{
+            h3{
+                color: $main-color;
             }
         }
     }
@@ -1531,6 +1551,7 @@ textarea {
 
     .reg-content {
         position: relative;
+        padding: 20px;
 
         .logo {
             text-align: center;
@@ -1572,4 +1593,13 @@ textarea {
         right: 0;
         bottom: 0;
     }
+}
+
+.d-none-lg {
+    display: none;
+}
+
+.p-m {
+    max-width: 95%;
+    margin-left: auto;
 }

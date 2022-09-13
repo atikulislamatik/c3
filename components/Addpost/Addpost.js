@@ -93,7 +93,7 @@ const Addpost = ({ placeholder }) => {
                             </form>
                         </div>
                         <div className="col-lg-6">
-                            <label >Main banner</label>
+                            <label className="main" >Main banner</label>
                             <Dragger {...props}>
                                 <p className="ant-upload-drag-icon">
                                     <InboxOutlined />

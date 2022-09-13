@@ -48,20 +48,20 @@ const Profile = () => {
                         <div className="col-lg-6">
                             <div className="profile-user">
                                 <div className="row align-items-center">
-                                    <div className="col-2 pe-0">
+                                    <div className="col-lg-2 col-3 col-md-2 pe-0">
                                         <div className="img">
                                             <img src="/images/user/2.png" alt="user" />
                                         </div>
                                     </div>
-                                    <div className="col-5">
+                                    <div className="col-lg-5 col-6 col-md-8">
                                         <div className="content">
                                             <h3>Morbi Tristique</h3>
                                             <span>@morbitristique</span>
                                         </div>
                                     </div>
-                                    <div className="col-5">
+                                    <div className="col-lg-5 col-3 col-md-2">
 
-                                        <a href="#" onClick={showModal} className="box-btn"><i className="ri-edit-2-line"></i> Edit Profile</a>
+                                        <a href="#" onClick={showModal} className="box-btn"><i className="ri-edit-2-line"></i> <span>Edit Profile</span></a>
 
                                     </div>
                                 </div>

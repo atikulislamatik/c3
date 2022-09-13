@@ -1,0 +1,1066 @@
+$main-color: #EB7F1B;
+$body-color: #7a7e9a;
+$heading-color: #0E0E0E;
+$white-color: #ffffff;
+$black-color: #000000;
+$dark-blue-color: #051242;
+$box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+$transition: all 0.5s;
+$border-ra: all 0.5s;
+$border-radius: 4px;
+$bg-color: #0E0E0E;
+$border: #C3CBDD;
+
+
+@media only screen and (min-width: 1800px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .banner-area {
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .single-swiper {
+            .content {
+                h3 {
+
+                    font-size: 23px;
+                }
+
+                .profile {
+                    margin-top: 15px;
+                }
+            }
+
+            .img {
+                height: 340px;
+
+                img {
+                    height: 340px;
+                }
+            }
+        }
+
+        .swiper-button-prev {
+            top: -35px;
+            left: 80%;
+        }
+
+        .swiper-button-next {
+            top: -8.4%;
+            right: 40px;
+        }
+
+        ul.top-shape img {
+            top: 0;
+        }
+    }
+
+    .tranding-area .single-trand .content h3,
+    .post-area .single-post .content h3 {
+        font-size: 20px;
+    }
+
+    .title {
+        h2 {
+            font-size: 32px;
+            width: 80% !important;
+        }
+
+        .icon {
+            width: 20%;
+            text-align: right;
+
+            i {
+                padding: 13px;
+                font-size: 22px;
+            }
+        }
+
+        hr {
+            display: none;
+        }
+    }
+
+    .p-m {
+        max-width: 100%;
+    }
+
+    .user-area .single-user .img,
+    .user-area .single-user .img img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .foot-top .footer-top h2 {
+        font-size: 70px;
+    }
+
+    .reg-area .reg-content {
+        padding: 0;
+    }
+
+    .profile-area {
+
+        .profile-user {
+            max-width: 100%;
+        }
+
+        .raking {
+            max-width: 100%;
+        }
+
+        .box-btn {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .ptb-70 {
+        padding: 40px 0;
+    }
+
+    .navbar-area {
+        position: relative;
+
+        .border-btn {
+            padding: 8px 8px;
+        }
+
+        .box-btn {
+            padding: 7px 15px;
+
+            i {
+                font-size: 25px;
+                top: 7px;
+                margin-right: 0;
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .banner-area {
+        .bg {
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 55px;
+        }
+
+        .single-swiper {
+            .content {
+                h3 {
+                    margin-top: 15px;
+                    font-size: 30px;
+                }
+
+                .profile {
+                    margin-top: 15px;
+                }
+            }
+
+            .img {
+                height: 300px;
+
+                img {
+                    height: 300px;
+                }
+            }
+        }
+
+        .swiper-button-prev {
+            top: -35px;
+            left: 80%;
+        }
+
+        .swiper-button-next {
+            top: -6.4%;
+            right: 10px;
+        }
+
+        ul.top-shape img {
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .title {
+        h2 {
+            font-size: 32px;
+            width: 80%;
+        }
+
+        .icon {
+            width: 20%;
+            text-align: right;
+
+            i {
+                padding: 13px;
+                font-size: 22px;
+            }
+        }
+
+        hr {
+            display: none;
+        }
+    }
+
+    .tranding-area {
+        .single-trand {
+            margin-bottom: 20px;
+
+            .content {
+                padding: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                .span {
+                    font-size: 14px;
+                }
+            }
+
+            .img {
+                height: 250px;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+
+        .box-btn {
+            width: 100%;
+
+            i {
+                font-size: 23px;
+                top: 6px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .writers-area {
+        .title h2 {
+            width: 80%;
+        }
+
+        .shape {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .single-item {
+            margin-bottom: 70px;
+        }
+
+        .lc {
+            margin-bottom: 0;
+        }
+    }
+
+    .events-area {
+        .title h2 {
+            width: 80%;
+        }
+
+        hr {
+
+            margin-top: 5px;
+        }
+
+        .single-event {
+            .content {
+                padding: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                .line-btn {
+                    font-size: 15px;
+                }
+            }
+
+            .img {
+                height: 250px;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .user-area {
+        .single-user {
+            .img {
+                height: 65px;
+                width: 65px;
+
+                img {
+                    height: 65px;
+                    width: 65px;
+                }
+            }
+
+            .rank {
+                text-align: right;
+
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .user-left {
+            margin-bottom: 30px;
+
+            .content {
+                h2 {
+                    font-size: 64px;
+                }
+            }
+        }
+    }
+
+    .foot-top {
+        &::before {
+
+            height: 180px;
+        }
+
+        .footer-top {
+            padding: 30px 50px;
+
+            h2 {
+                font-size: 32px;
+            }
+
+
+        }
+    }
+
+    .foot-top .footer-top .icon i {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .footer-area {
+        .single-footer {
+            margin-bottom: 12px;
+            text-align: center;
+
+            .social {
+                margin-top: 10px;
+                justify-content: center !important;
+                margin-left: 15px;
+            }
+        }
+
+        .powered-by {
+
+            padding-top: 25px;
+            margin-top: 25px;
+
+            .powered {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .reg-area {
+        .back {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .shape {
+            margin-top: 30px;
+            position: relative;
+            text-align: right;
+        }
+
+        .ptb-70 {
+            padding-top: 40px;
+            padding-bottom: 0;
+        }
+    }
+
+    .details-area {
+        .desc .key li h3 {
+            display: block;
+        }
+
+        .key {
+            display: block !important;
+
+            li {
+                display: inline-block !important;
+
+                h3 {
+                    display: block !important;
+                }
+            }
+        }
+
+        .shape.text-end {
+            display: none;
+        }
+
+        .articel {
+            padding: 20px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        .details-content {
+            max-width: 100%;
+
+            .hash {
+                margin-top: 15px;
+                // justify-content: flex-start;
+            }
+
+            .content h3 {
+                font-size: 26px;
+                line-height: 38px;
+            }
+
+            .profile {
+                margin-top: 5px;
+            }
+
+            .img {
+                height: 250px;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .add-area {
+        .content-top {
+            margin-top: 0px;
+            margin-bottom: 0;
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .shape {
+            position: relative;
+            right: -20px;
+            top: -25px;
+            max-width: 45%;
+            z-index: -1;
+            margin-left: auto;
+        }
+
+        .main {
+            margin-top: 25px;
+        }
+
+        .ant-upload.ant-upload-drag {
+            height: 250px;
+        }
+    }
+
+    .profile-area {
+        padding-bottom: 40px;
+        padding-top: 0;
+
+        .profile-user {
+            max-width: 100%;
+        }
+
+        .raking {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .box-btn {
+            padding: 7px 15px;
+            text-align: right;
+            margin-left: 43px;
+
+            span {
+                display: none;
+            }
+
+            i {
+                font-size: 25px;
+                top: 7px;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .post-area {
+        padding-top: 0 !important;
+        padding-bottom: 10px;
+
+        .title h2 {
+            width: 80%;
+        }
+
+        .post-btn {
+
+            .box-btn {
+                padding: 7px 15px;
+                margin-left: 75px;
+
+                i {
+                    font-size: 25px;
+                    top: 7px;
+                    margin-right: 0;
+                }
+
+            }
+
+            span {
+                display: none;
+            }
+        }
+
+        .single-post {
+            margin-bottom: 20px;
+
+            .content {
+                padding: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                .span {
+                    font-size: 14px;
+                }
+            }
+
+            .img {
+                height: 250px;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .d-none-sm {
+        display: none;
+    }
+
+    .d-none-lg {
+        display: block;
+    }
+
+    .reg-area .reg-content {
+        padding: 70px;
+    }
+
+    .p-m {
+        max-width: 100%;
+        margin: unset;
+    }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .ptb-70 {
+        padding: 40px 0;
+    }
+
+    .p-m {
+        max-width: 100%;
+        margin: unset;
+    }
+
+    .navbar-area {
+        position: relative;
+
+        .border-btn {
+            padding: 8px 8px;
+        }
+
+        .box-btn {
+            padding: 7px 15px;
+
+            i {
+                font-size: 25px;
+                top: 7px;
+                margin-right: 0;
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .banner-area {
+        .bg {
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 33px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .single-swiper {
+            .content {
+                h3 {
+                    margin-top: 15px;
+                    font-size: 23px;
+                }
+
+                .profile {
+                    margin-top: 15px;
+                }
+            }
+
+            .img {
+                height: 200px;
+
+                img {
+                    height: 200px;
+                }
+            }
+        }
+
+        .swiper-button-prev {
+            top: -35px;
+            left: 30%;
+        }
+
+        .swiper-button-next {
+            top: -7.4%;
+            right: 105px;
+        }
+
+        ul.top-shape img {
+            top: 0;
+        }
+    }
+
+    .title {
+        h2 {
+            font-size: 32px;
+            width: 80%;
+        }
+
+        .icon {
+            width: 20%;
+            text-align: right;
+
+            i {
+                padding: 13px;
+                font-size: 22px;
+            }
+        }
+
+        hr {
+            display: none;
+        }
+    }
+
+    .tranding-area {
+        .single-trand {
+            margin-bottom: 20px;
+
+            .content {
+                padding: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                .span {
+                    font-size: 14px;
+                }
+            }
+
+            .img {
+                height: 250px;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+
+        .box-btn {
+            width: 100%;
+
+            i {
+                font-size: 23px;
+                top: 6px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .writers-area {
+        .title h2 {
+            width: 80%;
+        }
+
+        .shape {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .single-item {
+            margin-bottom: 70px;
+        }
+
+        .lc {
+            margin-bottom: 0;
+        }
+    }
+
+    .events-area {
+        .title h2 {
+            width: 80%;
+        }
+
+        hr {
+
+            margin-top: 5px;
+        }
+
+        .single-event {
+            .content {
+                padding: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                .line-btn {
+                    font-size: 15px;
+                }
+            }
+
+            .img {
+                height: 250px;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .user-area {
+        .single-user {
+            .img {
+                height: 65px;
+                width: 65px;
+
+                img {
+                    height: 65px;
+                    width: 65px;
+                }
+            }
+
+            .rank {
+                text-align: right;
+
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .user-left {
+            margin-bottom: 30px;
+
+            .content {
+                h2 {
+                    font-size: 64px;
+                }
+            }
+        }
+    }
+
+    .foot-top {
+        &::before {
+
+            height: 180px;
+        }
+
+        .footer-top {
+            padding: 30px 50px;
+
+            h2 {
+                font-size: 32px;
+            }
+
+
+        }
+    }
+
+    .foot-top .footer-top .icon i {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .footer-area {
+        .single-footer {
+            margin-bottom: 12px;
+            text-align: center;
+
+            .social {
+                margin-top: 10px;
+                justify-content: center !important;
+                margin-left: 15px;
+            }
+        }
+
+        .powered-by {
+
+            padding-top: 25px;
+            margin-top: 25px;
+
+            .powered {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .reg-area {
+        .back {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .shape {
+            margin-top: 30px;
+            position: relative;
+            text-align: right;
+        }
+
+        .ptb-70 {
+            padding-top: 40px;
+            padding-bottom: 0;
+        }
+    }
+
+    .details-area {
+        .desc .key li h3 {
+            display: block;
+        }
+
+        .key {
+            display: block !important;
+
+            li {
+                display: inline-block !important;
+
+                h3 {
+                    display: block !important;
+                }
+            }
+        }
+
+        .shape.text-end {
+            display: none;
+        }
+
+        .articel {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .details-content {
+            max-width: 100%;
+
+            .hash {
+                margin-top: 15px;
+                justify-content: flex-start;
+            }
+
+            .content h3 {
+                font-size: 26px;
+                line-height: 38px;
+            }
+
+            .profile {
+                margin-top: 5px;
+            }
+
+            .img {
+                height: 250px;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .add-area {
+        .content-top {
+            margin-top: 0px;
+            margin-bottom: 0;
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .shape {
+            position: relative;
+            right: -20px;
+            top: -25px;
+            max-width: 45%;
+            z-index: -1;
+            margin-left: auto;
+        }
+
+        .main {
+            margin-top: 25px;
+        }
+
+        .ant-upload.ant-upload-drag {
+            height: 250px;
+        }
+    }
+
+    .profile-area {
+        padding-bottom: 40px;
+        padding-top: 0;
+
+        .profile-user {
+            max-width: 100%;
+        }
+
+        .raking {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .box-btn {
+            padding: 7px 15px;
+            text-align: right;
+            margin-left: 15px;
+
+            span {
+                display: none;
+            }
+
+            i {
+                font-size: 25px;
+                top: 7px;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .post-area {
+        padding-top: 0 !important;
+        padding-bottom: 10px;
+
+        .title h2 {
+            width: 80%;
+        }
+
+        .post-btn {
+
+            .box-btn {
+                padding: 7px 15px;
+                margin-left: 20px;
+
+                i {
+                    font-size: 25px;
+                    top: 7px;
+                    margin-right: 0;
+                }
+
+            }
+
+            span {
+                display: none;
+            }
+        }
+
+        .single-post {
+            margin-bottom: 20px;
+
+            .content {
+                padding: 15px 0;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                .span {
+                    font-size: 14px;
+                }
+            }
+
+            .img {
+                height: 250px;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .d-none-sm {
+        display: none;
+    }
+
+    .d-none-lg {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .banner-area {
+        .swiper-button-prev {
+            top: -35px;
+            left: 38%;
+        }
+
+        .swiper-button-next {
+            top: -7.4%;
+            right: 165px;
+        }
+
+    }
+
+    .post-area .post-btn .box-btn {
+        margin-left: 45px;
+    }
+
+    .profile-area .box-btn {
+        margin-left: 55px;
+    }
+}
+
+/* Continuer Custom Width Area Style */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        max-width: 1320px;
+    }
+}

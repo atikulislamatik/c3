@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Register = () => {
@@ -7,7 +8,9 @@ const Register = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <a className='back' href="#"><i className="ri-arrow-left-s-line"></i> Back to previous page</a>
+                            <Link href="/">
+                                <a className='back' href="#"><i className="ri-arrow-left-s-line"></i> Back to previous page</a>
+                            </Link>
                         </div>
                     </div>
                     <div className="bg ptb-70">

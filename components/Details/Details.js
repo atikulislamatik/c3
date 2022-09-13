@@ -9,7 +9,9 @@ const Details = () => {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="details-content">
-                                <a className='back' href="#"><i className="ri-arrow-left-s-line"></i> Back to previous page</a>
+                                <Link href="/">
+                                    <a className='back' href="#"><i className="ri-arrow-left-s-line"></i> Back to previous page</a>
+                                </Link>
                                 <div className="img">
                                     <img src="/images/details.svg" alt="details" />
                                 </div>
@@ -17,7 +19,7 @@ const Details = () => {
                                     <h3>In nec arcu vel sem porttitor elementum ac vitae enim.</h3>
                                     <span>September 02, 2022</span>
                                     <div className="row align-items-center mt-2">
-                                        <div className="col-lg-5">
+                                        <div className="col-lg-5 col-md-5">
                                             <div className="profile">
                                                 <Link href="/profile">
                                                     <a href="#">
@@ -28,7 +30,7 @@ const Details = () => {
                                             </div>
 
                                         </div>
-                                        <div className="col-lg-7">
+                                        <div className="col-lg-7 col-md-7">
                                             <ul className="hash d-flex">
                                                 <li><span>CRYPTO</span></li>
                                                 <li><span>NFT</span></li>

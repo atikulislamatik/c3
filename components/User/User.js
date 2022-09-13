@@ -23,9 +23,9 @@ const User = () => {
                                 <img src="/images/shape/ushape.svg" alt="shape" />
                             </div>
                         </div>
-                        <div className="col-lg-7 offset-lg-1">
-                            <div className="row">
-                                <div className="col-lg-6" data-aos="fade-in">
+                        <div className="col-lg-7">
+                            <div className="row p-m">
+                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
                                     <Link href="/profile" >
                                         <div className="single-user">
                                             <div className="row align-items-center">
@@ -50,7 +50,7 @@ const User = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="col-lg-6" data-aos="fade-in">
+                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
                                     <Link href="/profile" >
                                         <div className="single-user">
                                             <div className="row align-items-center">
@@ -75,7 +75,7 @@ const User = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="col-lg-6" data-aos="fade-in">
+                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
                                     <Link href="/profile" >
                                         <div className="single-user">
                                             <div className="row align-items-center">
@@ -100,7 +100,7 @@ const User = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="col-lg-6" data-aos="fade-in">
+                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
                                     <Link href="/profile" >
                                         <div className="single-user">
                                             <div className="row align-items-center">
@@ -125,7 +125,7 @@ const User = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="col-lg-6" data-aos="fade-in">
+                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
                                     <Link href="/profile" >
                                         <div className="single-user">
                                             <div className="row align-items-center">
@@ -150,7 +150,7 @@ const User = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="col-lg-6" data-aos="fade-in">
+                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
                                     <Link href="/profile" >
                                         <div className="single-user">
                                             <div className="row align-items-center">
@@ -175,7 +175,7 @@ const User = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="col-lg-6" data-aos="fade-in">
+                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
                                     <Link href="/profile" >
                                         <div className="single-user">
                                             <div className="row align-items-center">
@@ -200,7 +200,7 @@ const User = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="col-lg-6" data-aos="fade-in">
+                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
                                     <Link href="/profile" >
                                         <div className="single-user">
                                             <div className="row align-items-center">
@@ -225,7 +225,7 @@ const User = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="col-lg-6" data-aos="fade-in">
+                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
                                     <Link href="/profile" >
                                         <div className="single-user">
                                             <div className="row align-items-center">
@@ -250,7 +250,7 @@ const User = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div className="col-lg-6" data-aos="fade-in">
+                                <div className="col-lg-6 col-md-6" data-aos="fade-in">
                                     <Link href="/profile" >
                                         <div className="single-user">
                                             <div className="row align-items-center">

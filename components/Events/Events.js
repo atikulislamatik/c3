@@ -18,7 +18,7 @@ const Events = () => {
                             <div className="icon"><i className="ri-calendar-todo-fill"></i></div>
                         </div>
 
-                        <div className="col-lg-6" data-aos="fade-in">
+                        <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
                                 <div className="row">
                                     <div className="col-lg-5">
@@ -40,7 +40,7 @@ const Events = () => {
                                 <hr />
                             </div>
                         </div>
-                        <div className="col-lg-6" data-aos="fade-in">
+                        <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
                                 <div className="row">
                                     <div className="col-lg-5">
@@ -62,7 +62,7 @@ const Events = () => {
                                 <hr />
                             </div>
                         </div>
-                        <div className="col-lg-6" data-aos="fade-in">
+                        <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
                                 <div className="row">
                                     <div className="col-lg-5">
@@ -84,7 +84,7 @@ const Events = () => {
                                 <hr />
                             </div>
                         </div>
-                        <div className="col-lg-6" data-aos="fade-in">
+                        <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
                                 <div className="row">
                                     <div className="col-lg-5">
@@ -106,7 +106,7 @@ const Events = () => {
                                 <hr />
                             </div>
                         </div>
-                        <div className="col-lg-6" data-aos="fade-in">
+                        <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
                                 <div className="row">
                                     <div className="col-lg-5">
@@ -128,7 +128,7 @@ const Events = () => {
                                 <hr />
                             </div>
                         </div>
-                        <div className="col-lg-6" data-aos="fade-in">
+                        <div className="col-lg-6 col-md-6" data-aos="fade-in">
                             <div className="single-event">
                                 <div className="row">
                                     <div className="col-lg-5">
