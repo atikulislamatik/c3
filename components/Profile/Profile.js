@@ -120,7 +120,7 @@ const Profile = () => {
                         <div className="col-lg-6">
                             <div className="chart-area">
                                 <h3>Engagement Rate Statistic</h3>
-                                <Line data={data}  />
+                                {/* <Line data={data}  /> */}
                             </div>
                         </div>
                     </div>
