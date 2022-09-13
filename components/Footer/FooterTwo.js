@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 const Footer = () => {
     return (
         <>
@@ -12,7 +12,9 @@ const Footer = () => {
                                     <i className="ri-arrow-down-line"></i>
                                 </div>
                                 <h2>Connect with <span>fantastic</span> writers and wonderful readers!</h2>
+                                <Link href="/register">
                                 <a href="#" className="line-btn">Register Now <i className="ri-arrow-right-s-line"></i></a>
+                                </Link>
                             </div>
                         </div>
                     </div>

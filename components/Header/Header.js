@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const Header = () => {
-    
+
     return (
         <>
             <nav className="navbar-area navbar navbar-expand-lg pt-4 pb-4">
@@ -17,7 +17,11 @@ const Header = () => {
                         </div>
                         <div className="col-lg-10 col-9">
                             <ul className='d-flex align-items-center justify-content-end'>
-                                <li><a className='border-btn me-3' href="#">Register <i className="ri-arrow-right-s-line"></i></a></li>
+                                <li>
+                                    <Link href="/register">
+                                        <a className='border-btn me-3' href="#">Register <i className="ri-arrow-right-s-line"></i></a>
+                                    </Link>
+                                </li>
                                 <li><a className='box-btn' href="#"><i className="ri-wallet-fill"></i>Connect Wallet</a></li>
                             </ul>
                         </div>

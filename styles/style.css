@@ -1468,4 +1468,62 @@ textarea.form-control {
 .footer-area .powered-by .mid {
   max-width: 15%;
 }
+
+.reg-area {
+  position: relative;
+  z-index: 1;
+}
+
+.reg-area .back {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.reg-area .bg {
+  background: #0E0E0E;
+  position: relative;
+}
+
+.reg-area .reg-content {
+  position: relative;
+}
+
+.reg-area .reg-content .logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reg-area .reg-content .twitter-con {
+  position: relative;
+}
+
+.reg-area .reg-content .twitter-con i.ri-twitter-fill {
+  position: absolute;
+  bottom: 6px;
+  font-size: 20px;
+  left: 12px;
+}
+
+.reg-area .reg-content .twitter-con .form-control {
+  position: relative;
+  padding-left: 40px;
+}
+
+.reg-area .reg-content .twitter-con .box-btn {
+  position: absolute;
+  bottom: 1px;
+  right: 2px;
+  border: 2px solid #0E0E0E;
+  color: #EB7F1B;
+}
+
+.reg-area .reg-content .twitter-con .box-btn::before {
+  display: none;
+}
+
+.reg-area .shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */

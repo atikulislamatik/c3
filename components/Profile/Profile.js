@@ -24,21 +24,6 @@ const data = {
 };
 
 
-export const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top',
-      },
-      title: {
-        display: true,
-        text: 'Chart.js Line Chart',
-      },
-    },
-  };
-  
-
-
 const Profile = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -114,7 +99,18 @@ const Profile = () => {
                         <div className="col-lg-6">
                             <div className="chart-area">
                                 <h3>Engagement Rate Statistic</h3>
-                                <Line options={options} data={data}  />
+                                <Line options={{
+                                    plugins: {
+                                        title: {
+                                            display: true,
+                                            text: "Cryptocurrency prices"
+                                        },
+                                        legend: {
+                                            display: true,
+                                            position: "bottom"
+                                        }
+                                    }
+                                }} data={data} />
                             </div>
                         </div>
                     </div>
@@ -125,7 +121,7 @@ const Profile = () => {
                             <div className="user">
                                 <img src="/images/user/2.png" alt="user" />
                                 <a href="#">
-                                <input type="file" class="custom-file-input" />
+                                    <input type="file" class="custom-file-input" />
                                 </a>
                             </div>
                             <div class="col-lg-12 col-sm-12">
