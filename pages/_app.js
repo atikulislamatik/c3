@@ -2,8 +2,6 @@ import "antd/dist/antd.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../styles/bootstrap.min.css";
-// import '../styles/globals.css';
-// import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import '../styles/remixicon.css';
 import '../styles/style.css';
 import '../styles/responsive.css';

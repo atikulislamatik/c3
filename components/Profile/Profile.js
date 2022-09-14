@@ -14,7 +14,7 @@ const data = {
     labels: ["Aug 22", "Aug 23", "Aug 24", "Aug 25", "Aug 26", "Aug 27", "Aug 28"],
     datasets: [
         {
-            data: [0, 40, 20, 80, 60, 80, 100],
+            data: [0, 40, 20, 80, 60, 120, 100],
             fill: false,
             tension: 0.5,
             borderColor: "rgba(235,127,27,1)"
@@ -29,7 +29,6 @@ const options = {
             }
         }, y: {
             ticks: {
-               
                 callback: function (val) {
                     return val + '%';
                 },

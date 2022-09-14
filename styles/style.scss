@@ -476,8 +476,8 @@ textarea {
     }
 
     .swiper {
-        overflow: unset !important;
-        overflow-x: clip !important;
+        // overflow: hidden !important;
+        overflow-x: hidden !important;
     }
 
 }
