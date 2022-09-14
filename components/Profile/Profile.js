@@ -22,36 +22,24 @@ const data = {
         }
     ]
 };
-// const options = {
-//     scales: {
-//         x: {
-//             grid: {
-//                 borderColor: ''
-//             }
-//         }, y: {
-//             ticks: {
-//                 callback: function (val, index) {
-//                     return val + '%';
-//                 },
-//             }
-//         }
-//     }
-
-// }
-
-const options= {
-    responsive: true,
+const options = {
     scales: {
-      x: {
-        display: true,
-
-      },
-      y: {
-        display: true,
-
-      }
+        x: {
+            grid: {
+                borderColor: ''
+            }
+        }, y: {
+            beginAtZero: true ,
+            ticks: {
+                callback: function (val, index) {
+                    return val + '%';
+                },
+            }
+        }
     }
-  }
+
+}
+
 const Profile = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
