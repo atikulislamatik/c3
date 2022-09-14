@@ -287,6 +287,9 @@ textarea {
             transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
         }
 
+        i {
+            color: #fff;
+        }
 
     }
 }
@@ -409,7 +412,7 @@ textarea {
                 .arrow-btn {
                     color: $main-color;
                     font-weight: 600;
-                    font-size: 20px;
+                    font-size: 18px;
 
                     i {
                         position: relative;
@@ -652,7 +655,7 @@ textarea {
 // writer 
 .writers-area {
     .title {
-        margin-bottom: 80px;
+        margin-bottom: 100px;
 
         h2 {
             width: 65%;
@@ -792,7 +795,7 @@ textarea {
                     line-height: 40px;
                     font-weight: 700;
                     font-style: italic;
-                    margin-bottom: 5px;
+                    margin-bottom: 0px;
 
                     span {
                         font-weight: 600;
@@ -1029,20 +1032,23 @@ textarea {
 
     .title {
         h2 {
-            width: 20%;
+            width: 38%;
         }
 
         hr {
-            width: 63%;
+            width: 48%;
         }
 
+        .post-btn {
+            width: 12%;
+        }
 
     }
 
     .single-post {
         position: relative;
         margin-bottom: 30px;
-        transition: $transition;
+        // transition: 0.3s;
 
         .btns {
             justify-content: flex-end;
@@ -1092,6 +1098,7 @@ textarea {
                 margin-bottom: 5px;
                 line-height: normal;
                 line-height: 30px;
+                transition: 0.3s;
             }
 
             span {
@@ -1145,8 +1152,13 @@ textarea {
             }
         }
 
+
         &:hover {
-            transform: translateY(-10px);
+            transform: translateY(-10px) !important;
+
+            h3 {
+                color: $main-color;
+            }
         }
     }
 
@@ -1189,6 +1201,7 @@ textarea {
             right: 2px;
             border: 2px solid #0E0E0E;
             color: $main-color;
+            padding: 11px 20px;
 
             &::before {
                 display: none;
@@ -1570,13 +1583,23 @@ textarea {
                 background: $main-color;
                 margin-right: 15px;
 
+                transition: $transition;
 
                 i {
                     color: #fff;
                     font-size: 20px;
+                    transition: $transition;
                 }
 
                 line-height: 35px;
+
+                &:hover {
+                    background: #fff;
+
+                    i {
+                        color: $main-color;
+                    }
+                }
             }
 
         }
@@ -1652,9 +1675,10 @@ textarea {
             .box-btn {
                 position: absolute;
                 bottom: 1px;
-                right: 2px;
-                border: 2px solid #0E0E0E;
+                right: 1px;
+                border: 1px solid #0E0E0E;
                 color: $main-color;
+                padding: 11px 20px !important;
 
                 &::before {
                     display: none;

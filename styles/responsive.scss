@@ -25,7 +25,7 @@ $border: #C3CBDD;
             .content {
                 h3 {
 
-                    font-size: 23px;
+                    font-size: 20px;
                 }
 
                 .profile {
@@ -34,10 +34,10 @@ $border: #C3CBDD;
             }
 
             .img {
-                height: 340px;
+                height: 290px;
 
                 img {
-                    height: 340px;
+                    height: 290px;
                 }
             }
         }
@@ -48,7 +48,7 @@ $border: #C3CBDD;
         }
 
         .swiper-button-next {
-            top: -8.4%;
+            top: -11.4%;
             right: 40px;
         }
 
@@ -99,6 +99,38 @@ $border: #C3CBDD;
 
     .reg-area .reg-content {
         padding: 0;
+    }
+
+    .writers-area .single-item .box-btn {
+
+        padding: 24px 70px;
+    }
+
+    .events-area .single-event .content h3 {
+        font-size: 18px;
+    }
+
+    .events-area .single-event .content .date h6 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .events-area .single-event .img {
+        height: 175px;
+    }
+
+    .user-area .user-left .content h2 {
+        font-size: 65px;
+        color: #fff;
+    }
+
+    .post-btn {
+        width: 20%;
+        text-align: right;
+    }
+
+    .details-area .details-content .img {
+        height: 550px;
     }
 
     .profile-area {
@@ -626,8 +658,8 @@ $border: #C3CBDD;
         .single-swiper {
             .content {
                 h3 {
-                    margin-top: 15px;
-                    font-size: 23px;
+                    margin-top: 5px;
+                    font-size: 20px;
                 }
 
                 .profile {
@@ -636,10 +668,10 @@ $border: #C3CBDD;
             }
 
             .img {
-                height: 200px;
+                height: 180px;
 
                 img {
-                    height: 200px;
+                    height: 180px;
                 }
             }
         }
@@ -662,11 +694,11 @@ $border: #C3CBDD;
     .title {
         h2 {
             font-size: 32px;
-            width: 80%;
+            width: 80% !important;
         }
 
         .icon {
-            width: 20%;
+            width: 20% !important;
             text-align: right;
 
             i {

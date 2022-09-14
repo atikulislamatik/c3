@@ -1,10 +1,15 @@
+import AOS from 'aos';
 import Link from 'next/link';
-import React from 'react';
-
+import React, { useEffect } from 'react';
 const Articel = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        });
+    }, [AOS]);
     return (
         <>
-            <div className="single-artical">
+            <div className="single-artical" data-aos="fade-in">
                 <h3>In nec arcu vel sem porttitor elementum ac vitae enim.</h3>
                 <span>September 02, 2022</span>
                 <Link href="/profile">

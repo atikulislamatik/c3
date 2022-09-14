@@ -1,9 +1,11 @@
+
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from 'next/image';
 const Banner = () => {
+
     return (
         <>
             <div className="banner-area">
@@ -20,7 +22,7 @@ const Banner = () => {
                             <div className="col-lg-12">
                                 <div className="swiper-slider-container">
                                     <Swiper navigation={true} autoplay={{
-                                        delay: 3500,
+                                        delay: 30000500,
                                         disableOnInteraction: false,
                                     }} modules={[Autoplay, Navigation]} className="mySwiper">
                                         <SwiperSlide className='single-swiper'>

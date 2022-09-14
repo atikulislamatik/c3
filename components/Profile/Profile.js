@@ -50,7 +50,7 @@ const Profile = () => {
                                 <div className="row align-items-center">
                                     <div className="col-lg-2 col-3 col-md-2 pe-0">
                                         <div className="img">
-                                            <img src="/images/user/2.png" alt="user" />
+                                            <img src="/images/user/1.svg" alt="user" />
                                         </div>
                                     </div>
                                     <div className="col-lg-5 col-6 col-md-8">

@@ -41,7 +41,9 @@ const Post = () => {
                                             </div>
                                             <div className="content">
                                                 <Link href="/details">
-                                                    <h3>{product.title}</h3>
+                                                    <a href="#">
+                                                        <h3>{product.title}</h3>
+                                                    </a>
                                                 </Link>
                                                 <span>{product.date}</span>
                                                 <div className="profile">
