@@ -22,7 +22,7 @@ const Banner = () => {
                             <div className="col-lg-12">
                                 <div className="swiper-slider-container">
                                     <Swiper navigation={true} autoplay={{
-                                        delay: 30000500,
+                                        delay: 3500,
                                         disableOnInteraction: false,
                                     }} modules={[Autoplay, Navigation]} className="mySwiper">
                                         <SwiperSlide className='single-swiper'>
