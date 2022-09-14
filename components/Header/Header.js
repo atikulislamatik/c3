@@ -10,7 +10,8 @@ const Header = () => {
     }
 
     const CheckWallet = () => {
-        setWallet(true)
+        setWallet(true);
+        setReg(true);
     }
     return (
         <>

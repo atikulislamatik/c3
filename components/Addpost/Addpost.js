@@ -1,8 +1,9 @@
 import { InboxOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
+
+import Editor from '../Editor';
+
 import React from 'react';
-
-
 const { Dragger } = Upload;
 const props = {
     name: 'file',
@@ -33,7 +34,8 @@ const config = {
 };
 
 const Addpost = ({ placeholder }) => {
-  
+
+
     return (
         <>
             <div className="add-area">
@@ -54,7 +56,7 @@ const Addpost = ({ placeholder }) => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <form action="#">
+                            <form action="#" className="add-form">
                                 <div class="col-lg-12 col-sm-12">
                                     <div class="form-group">
                                         <label>Post title</label>
@@ -93,7 +95,7 @@ const Addpost = ({ placeholder }) => {
                             </form>
                         </div>
                         <div className="col-lg-6">
-                            <label className="main" >Main banner</label>
+                            <label className="main add-form" >Main banner</label>
                             <Dragger {...props}>
                                 <p className="ant-upload-drag-icon">
                                     <InboxOutlined />
@@ -105,18 +107,11 @@ const Addpost = ({ placeholder }) => {
                         </div>
                         <div className="col-12 mt-4">
                             <label >Content</label>
-
-                           
+                            <Editor />
                         </div>
                     </div>
                 </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
         </>
     );
 };

@@ -1419,7 +1419,9 @@ textarea {
 // Add area
 .add-area {
     position: relative;
-
+.add-form{
+    margin-top: 70px;
+}
 
     .ant-upload.ant-upload-drag {
         background: #fff !important;
@@ -1439,7 +1441,7 @@ textarea {
 
     .content-top {
         margin-top: 30px;
-        margin-bottom: 70px;
+        margin-bottom: 120px;
 
         h2 {
             font-size: 80px;
@@ -1449,7 +1451,7 @@ textarea {
     .shape {
         position: absolute;
         right: 0;
-        top: 0;
+        top: 13%;
     }
 
     .hash {
