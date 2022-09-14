@@ -30,9 +30,9 @@ const options = {
             }
         }, y: {
             ticks: {
-                callback: function (val, index) {
-                    return val;
-                },
+                // callback: function (val, index) {
+                //     return val;
+                // },
             }
         }
     }
