@@ -1,42 +1,33 @@
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import { CKEditor } from '@ckeditor/ckeditor5-react';
-import React, { Component } from 'react';
+import React, { useEffect, useRef, useState } from 'react'
 
-class Editor extends Component {
+export default function Editor () {
+  const editorRef = useRef()
+  const [editorLoaded, setEditorLoaded] = useState(false)
+  const { CKEditor, ClassicEditor } = editorRef.current || {}
 
-    render() {
-        if (typeof window !== 'undefined') {
-            console.log('You are on the browser')
-            // ✅ Can use window here
-        } else {
-            console.log('You are on the server')
-            // ⛔️ Don't use window here
-        }
-
-        return (
-            <div className="Editor">
-
-                <CKEditor
-                    editor={ClassicEditor}
-                    data="<p>Hello from CKEditor 5!</p>"
-                    onReady={editor => {
-                        // You can store the "editor" and use when it is needed.
-                        console.log('Editor is ready to use!', editor);
-                    }}
-                    onChange={(event, editor) => {
-                        const data = editor.getData();
-                        console.log({ event, editor, data });
-                    }}
-                    onBlur={(event, editor) => {
-                        console.log('Blur.', editor);
-                    }}
-                    onFocus={(event, editor) => {
-                        console.log('Focus.', editor);
-                    }}
-                />
-            </div>
-        );
+  useEffect(() => {
+    editorRef.current = {
+      // CKEditor: require('@ckeditor/ckeditor5-react'), // depricated in v3
+      CKEditor: require('@ckeditor/ckeditor5-react').CKEditor , // v3+
+      ClassicEditor: require('@ckeditor/ckeditor5-build-classic')
     }
-}
+    setEditorLoaded(true)
+  }, [])
 
-export default Editor;
+  return editorLoaded ? (
+    <CKEditor
+      editor={ClassicEditor}
+      data='<p>Hello from CKEditor 5!</p>'
+      onInit={editor => {
+        // You can store the "editor" and use when it is needed.
+        console.log('Editor is ready to use!', editor)
+      }}
+      onChange={(event, editor) => {
+        const data = editor.getData()
+        console.log({ event, editor, data })
+      }}
+    />
+  ) : (
+    <div>Editor loading</div>
+  )
+}
