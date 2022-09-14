@@ -1419,14 +1419,62 @@ textarea {
 // Add area
 .add-area {
     position: relative;
-.add-form{
-    margin-top: 70px;
-}
+
+    .rich {
+        ul.btn-rich {
+            justify-content: flex-end;
+            margin-top: 20px;
+
+            li {
+                a {
+                    padding: 16px 32px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    background: #7f859b;
+                }
+
+                .post {
+                    background: $main-color;
+                    margin-left: 10px;
+
+                    i {
+                        color: #fff;
+                        margin-right: 10px;
+                        font-size: 18px;
+                        position: relative;
+                        top: 4px;
+
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+        border-color: transparent !important;
+        border-top-color: $border  !important;
+    }
+
+    .add-form {
+        .form-control {
+            margin-bottom: 25px !important;
+        }
+    }
+
+    .ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
+        height: 400px !important;
+    }
+
+    .ck.ck-toolbar {
+        border: none !important;
+    }
 
     .ant-upload.ant-upload-drag {
         background: #fff !important;
         box-shadow: $box-shadow;
         border: none !important;
+        height: 380px;
 
     }
 
@@ -1451,7 +1499,7 @@ textarea {
     .shape {
         position: absolute;
         right: 0;
-        top: 13%;
+        top: 7%;
     }
 
     .hash {

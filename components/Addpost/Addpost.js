@@ -38,7 +38,7 @@ const Addpost = ({ placeholder }) => {
 
     return (
         <>
-            <div className="add-area">
+            <div className="add-area ptb-70">
                 <div className="container">
                     <div className="row">
                         <a className='back' href="#"><i className="ri-arrow-left-s-line"></i> Back to previous page</a>
@@ -57,16 +57,16 @@ const Addpost = ({ placeholder }) => {
                         </div>
                         <div className="col-lg-6">
                             <form action="#" className="add-form">
-                                <div class="col-lg-12 col-sm-12">
-                                    <div class="form-group">
+                                <div className="col-lg-12 col-sm-12">
+                                    <div className="form-group">
                                         <label>Post title</label>
-                                        <input type="text" class="form-control mb-3" placeholder="Input your post title" />
+                                        <input type="text" className="form-control mb-3" placeholder="Input your post title" />
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-sm-12">
-                                    <div class="form-group">
+                                <div className="col-lg-12 col-sm-12">
+                                    <div className="form-group">
                                         <label>Labels</label>
-                                        <input type="text" class="form-control mb-3" placeholder="Add your labels" />
+                                        <input type="text" className="form-control mb-3" placeholder="Add your labels" />
                                         <i className="ri-add-line"></i>
 
                                     </div>
@@ -77,10 +77,10 @@ const Addpost = ({ placeholder }) => {
                                         <li><span>NEWS</span></li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-12 col-sm-12">
-                                    <div class="form-group">
+                                <div className="col-lg-12 col-sm-12">
+                                    <div className="form-group">
                                         <label>Labels</label>
-                                        <input type="text" class="form-control mb-3" placeholder="Add your labels" />
+                                        <input type="text" className="form-control mb-3" placeholder="Add your labels" />
                                         <i className="ri-add-line"></i>
 
                                     </div>
@@ -105,9 +105,21 @@ const Addpost = ({ placeholder }) => {
                             </Dragger>
 
                         </div>
+                    </div>
+                    <div className="row">
                         <div className="col-12 mt-4">
                             <label >Content</label>
-                            <Editor />
+                            <div className="rich">
+                                <Editor />
+                                <ul className='btn-rich d-flex align-items-center'>
+                                    <li>
+                                        <a className="cancel" href="#">CANCEL</a>
+                                    </li>
+                                    <li>
+                                        <a className='post' href="#"><i class="ri-shield-check-fill"></i>POST</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

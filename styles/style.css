@@ -1396,8 +1396,49 @@ textarea.form-control {
   position: relative;
 }
 
-.add-area .add-form {
-  margin-top: 70px;
+.add-area .rich ul.btn-rich {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.add-area .rich ul.btn-rich li a {
+  padding: 16px 32px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #7f859b;
+}
+
+.add-area .rich ul.btn-rich li .post {
+  background: #EB7F1B;
+  margin-left: 10px;
+}
+
+.add-area .rich ul.btn-rich li .post i {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 18px;
+  position: relative;
+  top: 4px;
+  line-height: 15px;
+}
+
+.add-area .ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+  border-color: transparent !important;
+  border-top-color: #C3CBDD !important;
+}
+
+.add-area .add-form .form-control {
+  margin-bottom: 25px !important;
+}
+
+.add-area .ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
+  height: 400px !important;
+}
+
+.add-area .ck.ck-toolbar {
+  border: none !important;
 }
 
 .add-area .ant-upload.ant-upload-drag {
@@ -1405,6 +1446,7 @@ textarea.form-control {
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   border: none !important;
+  height: 380px;
 }
 
 .add-area .ant-upload.ant-upload-drag p.ant-upload-drag-icon .anticon {
@@ -1428,7 +1470,7 @@ textarea.form-control {
 .add-area .shape {
   position: absolute;
   right: 0;
-  top: 13%;
+  top: 7%;
 }
 
 .add-area .hash {
