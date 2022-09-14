@@ -501,7 +501,7 @@ textarea {
     margin-bottom: 40px;
 
     h2 {
-        width: 48%;
+        width: 58%;
         font-size: 96px;
         line-height: 120%;
         color: #0E0E0E;
@@ -512,7 +512,7 @@ textarea {
     }
 
     hr {
-        width: 45%;
+        width: 35%;
         margin-right: 2%;
     }
 
@@ -531,6 +531,17 @@ textarea {
 
 .tranding-area {
     position: relative;
+
+    .title {
+        h2 {
+            width: 48%;
+        }
+
+        hr {
+            width: 45%;
+            margin-right: 2%;
+        }
+    }
 
     .single-trand {
         position: relative;
@@ -644,7 +655,7 @@ textarea {
         margin-bottom: 80px;
 
         h2 {
-            width: 60%;
+            width: 65%;
         }
 
         hr {
