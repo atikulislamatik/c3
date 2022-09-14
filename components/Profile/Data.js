@@ -33,6 +33,9 @@ const options = {
     yAxes: [
       {
         ticks: {
+          callback: function (val) {
+            return val + '%';
+        },
           suggestedMin: 0,
           suggestedMax: 100
         }
