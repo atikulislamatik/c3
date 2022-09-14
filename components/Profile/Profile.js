@@ -22,6 +22,22 @@ const data = {
         }
     ]
 };
+const options = {
+    scales: {
+        x: {
+            grid: {
+                borderColor: ''
+            }
+        }, y: {
+            ticks: {
+                callback: function (val, index) {
+                    return val;
+                },
+            }
+        }
+    }
+
+}
 
 
 const Profile = () => {
@@ -99,18 +115,7 @@ const Profile = () => {
                         <div className="col-lg-6">
                             <div className="chart-area">
                                 <h3>Engagement Rate Statistic</h3>
-                                <Line options={{
-                                    plugins: {
-                                        title: {
-                                            display: true,
-                                            text: "Cryptocurrency prices"
-                                        },
-                                        legend: {
-                                            display: true,
-                                            position: "bottom"
-                                        }
-                                    }
-                                }} data={data} />
+                                <Line options={options} data={data} />
                             </div>
                         </div>
                     </div>

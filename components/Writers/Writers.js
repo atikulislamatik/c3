@@ -25,7 +25,7 @@ const Writers = () => {
                                     <div className="badge">
                                         <div>01</div>
                                     </div>
-                                </div>
+                                </div>p
                                 <div className="content">
                                     <h3>Morbi Tristique</h3>
                                     <span>@morbitristique</span>
