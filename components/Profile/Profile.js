@@ -30,10 +30,9 @@ const options = {
             }
         }, y: {
             ticks: {
-                // Include a dollar sign in the ticks
-                callback: function(value, index, ticks) {
-                    return '$' + value;
-                }
+                callback: function (val, index) {
+                    return val;
+                },
             }
         }
     }
