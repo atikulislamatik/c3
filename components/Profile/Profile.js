@@ -30,6 +30,8 @@ const options = {
             }
         }, y: {
             ticks: {
+                suggestedMin: 0,
+                suggestedMax: 100,
                 callback: function (val) {
                     return val + '%';
                 },
@@ -114,8 +116,8 @@ const Profile = () => {
                         <div className="col-lg-6">
                             <div className="chart-area">
                                 <h3>Engagement Rate Statistic</h3>
-                                {/* <Line options={options} data={data} /> */}
-                               <Data/>
+                                <Line options={options} data={data} />
+                               {/* <Data/> */}
                             </div>
                         </div>
                     </div>
