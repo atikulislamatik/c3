@@ -29,11 +29,10 @@ const options = {
             }
         }, y: {
             ticks: {
-                suggestedMin: 0,
-                suggestedMax: 100,
-                // callback: function (val) {
-                //     return val + '%';
-                // },
+               
+                callback: function (val) {
+                    return val + '%';
+                },
             }
         }
     }
