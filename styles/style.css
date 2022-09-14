@@ -478,7 +478,8 @@ textarea.form-control {
 }
 
 .banner-area .swiper {
-  overflow-x: hidden !important;
+  overflow: hidden !important;
+  overflow-x: clip !important;
 }
 
 .back {
