@@ -30,11 +30,11 @@ const options = {
             }
         }, y: {
             beginAtZero: true ,
-            ticks: {
-                callback: function (val, index) {
-                    return val + '%';
-                },
-            }
+            // ticks: {
+            //     callback: function (val, index) {
+            //         return val + '%';
+            //     },
+            // }
         }
     }
 
