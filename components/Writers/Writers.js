@@ -23,7 +23,7 @@ const Writers = () => {
                                 <div className="img">
                                     <img src="/images/user/1.svg" alt="user" />
                                     <div className="badge">
-                                        <div>1</div>
+                                        <div>01</div>
                                     </div>
                                 </div>
                                 <div className="content">
@@ -38,7 +38,7 @@ const Writers = () => {
                                 <div className="img">
                                     <img src="/images/user/2.svg" alt="user" />
                                     <div className="badge">
-                                        <div>2</div>
+                                        <div>02</div>
                                     </div>
                                 </div>
                                 <div className="content">
@@ -53,7 +53,7 @@ const Writers = () => {
                                 <div className="img">
                                     <img src="/images/user/3.svg" alt="user" />
                                     <div className="badge">
-                                        <div>3</div>
+                                        <div>03</div>
                                     </div>
                                 </div>
                                 <div className="content">
