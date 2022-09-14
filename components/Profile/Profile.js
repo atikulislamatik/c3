@@ -29,12 +29,12 @@ const options = {
                 borderColor: ''
             }
         }, y: {
-            beginAtZero: true ,
+            beginAtZero: true 
             // ticks: {
             //     callback: function (val, index) {
             //         return val + '%';
             //     },
-            // }
+            }
         }
     }
 
