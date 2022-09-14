@@ -7,7 +7,6 @@ export default function Editor () {
 
   useEffect(() => {
     editorRef.current = {
-      //CKEditor: require('@ckeditor/ckeditor5-react'), // depricated in v3
       CKEditor: require('@ckeditor/ckeditor5-react').CKEditor , // v3+
       ClassicEditor: require('@ckeditor/ckeditor5-build-classic')
     }
@@ -17,7 +16,7 @@ export default function Editor () {
   return editorLoaded ? (
     <CKEditor
       editor={ClassicEditor}
-      data='<p>Compose ab epic...</p>'
+      config={{placeholder: "Compose ab epic..."}} 
       onInit={editor => {
         // You can store the "editor" and use when it is needed.
         console.log('Editor is ready to use!', editor)

@@ -67,29 +67,29 @@ const Addpost = ({ placeholder }) => {
                                     <div className="form-group">
                                         <label>Labels</label>
                                         <input type="text" className="form-control mb-3" placeholder="Add your labels" />
-                                        <i className="ri-add-line"></i>
+                                       <a href="#"> <i className="ri-add-line"></i></a>
 
                                     </div>
                                     <ul className="hash d-flex">
-                                        <li><span>CRYPTO</span></li>
-                                        <li><span>NFT</span></li>
-                                        <li><span>EVENT</span></li>
-                                        <li><span>NEWS</span></li>
+                                        <li><a href="#"><span>CRYPTO</span></a></li>
+                                        <li><a href="#"><span>NFT</span></a></li>
+                                        <li><a href="#"><span>EVENT</span></a></li>
+                                        <li><a href="#"><span>NEWS</span></a></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-12 col-sm-12">
                                     <div className="form-group">
                                         <label>Labels</label>
-                                        <input type="text" className="form-control mb-3" placeholder="Add your labels" />
-                                        <i className="ri-add-line"></i>
+                                        <input type="text" className="form-control mb-3" placeholder="Add your keywords" />
+                                       <a href="#"> <i className="ri-add-line"></i></a>
 
                                     </div>
                                     <ul className='d-flex align-items-center key'>
-                                        <li><span>DONEC</span></li>
-                                        <li><span>QUIS</span></li>
-                                        <li><span>ARCU</span></li>
-                                        <li><span>VELIT</span></li>
-                                        <li><span>PRETIUM</span></li>
+                                        <li><a href="#"><span>DONEC</span></a></li>
+                                        <li><a href="#"><span>QUIS</span></a></li>
+                                        <li><a href="#"><span>ARCU</span></a></li>
+                                        <li><a href="#"><span>VELIT</span></a></li>
+                                        <li><a href="#"><span>PRETIUM</span></a></li>
                                     </ul>
                                 </div>
                             </form>

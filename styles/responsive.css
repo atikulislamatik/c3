@@ -437,7 +437,7 @@
     padding: 8px 8px;
   }
   .navbar-area .box-btn {
-    padding: 7px 15px;
+    padding: 8px 10px;
   }
   .navbar-area .box-btn i {
     font-size: 25px;
@@ -454,6 +454,7 @@
     font-size: 33px;
     text-align: center;
     margin-bottom: 80px;
+    line-height: 30px;
   }
   .banner-area .single-swiper .content h3 {
     margin-top: 5px;
@@ -470,11 +471,11 @@
   }
   .banner-area .swiper-button-prev {
     top: -35px;
-    left: 30%;
+    left: 28%;
   }
   .banner-area .swiper-button-next {
     top: -7.4%;
-    right: 105px;
+    right: 100px;
   }
   .banner-area ul.top-shape img {
     top: 0;
@@ -659,6 +660,11 @@
   .details-area .details-content .img img {
     height: 250px;
   }
+  .add-area .rich ul.btn-rich {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
   .add-area .content-top {
     margin-top: 0px;
     margin-bottom: 0;
@@ -670,9 +676,12 @@
     position: relative;
     right: -20px;
     top: -25px;
-    max-width: 45%;
+    max-width: 60%;
     z-index: -1;
     margin-left: auto;
+  }
+  .add-area .add-form {
+    margin-top: 20px;
   }
   .add-area .main {
     margin-top: 25px;
@@ -692,7 +701,7 @@
     margin-bottom: 30px;
   }
   .profile-area .box-btn {
-    padding: 7px 15px;
+    padding: 12px 15px;
     text-align: right;
     margin-left: 15px;
   }
@@ -712,7 +721,7 @@
     width: 80%;
   }
   .post-area .post-btn .box-btn {
-    padding: 7px 15px;
+    padding: 12px 15px;
     margin-left: 20px;
   }
   .post-area .post-btn .box-btn i {
@@ -742,7 +751,16 @@
     height: 250px;
   }
   .d-none-sm {
-    display: none;
+    padding: 10px 4px !important;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  .d-none-sm i {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+  .d-none-sm.me-3 {
+    margin-right: 0.5rem !important;
   }
   .d-none-lg {
     display: block;
