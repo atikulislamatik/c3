@@ -680,6 +680,8 @@ textarea.form-control {
   position: relative;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .writers-area .single-item .img {
@@ -750,6 +752,14 @@ textarea.form-control {
 .writers-area .single-item .box-btn.hover {
   display: none;
   background: #EB7F1B;
+}
+
+.writers-area .single-item:hover .box-btn {
+  background: #EB7F1B;
+}
+
+.writers-area .single-item:hover .box-btn i {
+  color: #fff;
 }
 
 .events-area {

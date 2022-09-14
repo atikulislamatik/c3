@@ -675,6 +675,7 @@ textarea {
     .single-item {
         position: relative;
         box-shadow: $box-shadow;
+        transition: $transition;
 
         .img {
             width: 140px;
@@ -742,6 +743,16 @@ textarea {
                 display: none;
                 background: $main-color;
 
+            }
+        }
+
+        &:hover {
+            .box-btn {
+                background: $main-color;
+
+                i {
+                    color: #fff;
+                }
             }
         }
     }
