@@ -328,6 +328,8 @@ textarea {
         padding: 60px 60px 0 60px;
     }
 
+
+
     ul.top-shape {
         margin-bottom: 20px;
         position: relative;
@@ -1486,14 +1488,39 @@ textarea {
         border: none !important;
     }
 
-    .ant-upload.ant-upload-drag {
+    // .ant-upload.ant-upload-drag {
+    //     background: #fff !important;
+    //     border: none !important;
+    //     height: 380px;
+
+    // }
+
+    .ant-upload.ant-upload-select-picture-card {
+        height: 380px !important;
         background: #fff !important;
         border: none !important;
-        height: 380px;
+        width: 100% !important;
+        overflow: hidden !important;
+        object-fit: contain !important;
+    }
 
+    span.ant-upload-picture-card-wrapper.avatar-uploader {
+        height: 380px !important;
+        background: #fff !important;
+        border: none !important;
+        overflow: hidden !important;
     }
 
     .ant-upload.ant-upload-drag p.ant-upload-drag-icon .anticon {
+        color: #0E0E0E;
+    }
+
+    .anticon svg {
+        display: inline-block;
+        font-size: 25px !important;
+    }
+
+    .anticon .anticon-file-image {
         color: #0E0E0E;
     }
 

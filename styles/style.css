@@ -1454,13 +1454,33 @@ textarea.form-control {
   border: none !important;
 }
 
-.add-area .ant-upload.ant-upload-drag {
+.add-area .ant-upload.ant-upload-select-picture-card {
+  height: 380px !important;
   background: #fff !important;
   border: none !important;
-  height: 380px;
+  width: 100% !important;
+  overflow: hidden !important;
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+.add-area span.ant-upload-picture-card-wrapper.avatar-uploader {
+  height: 380px !important;
+  background: #fff !important;
+  border: none !important;
+  overflow: hidden !important;
 }
 
 .add-area .ant-upload.ant-upload-drag p.ant-upload-drag-icon .anticon {
+  color: #0E0E0E;
+}
+
+.add-area .anticon svg {
+  display: inline-block;
+  font-size: 25px !important;
+}
+
+.add-area .anticon .anticon-file-image {
   color: #0E0E0E;
 }
 

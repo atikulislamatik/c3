@@ -1,37 +1,8 @@
-import { InboxOutlined } from '@ant-design/icons';
-import { message, Upload } from 'antd';
 
 import Editor from '../Editor';
 
 import React from 'react';
-const { Dragger } = Upload;
-const props = {
-    name: 'file',
-    multiple: true,
-    action: '#',
-
-    onChange(info) {
-        const { status } = info.file;
-
-        if (status !== 'uploading') {
-            console.log(info.file, info.fileList);
-        }
-
-        if (status === 'done') {
-            message.success(`${info.file.name} file uploaded successfully.`);
-        } else if (status === 'error') {
-            message.error(`${info.file.name} file upload failed.`);
-        }
-    },
-
-    onDrop(e) {
-        console.log('Dropped files', e.dataTransfer.files);
-    },
-};
-
-const config = {
-    buttons: ["bold", "italic", "link", "unlink", "underline", "source"],
-};
+import Uploads from './Upload';
 
 const Addpost = ({ placeholder }) => {
 
@@ -67,7 +38,7 @@ const Addpost = ({ placeholder }) => {
                                     <div className="form-group">
                                         <label>Labels</label>
                                         <input type="text" className="form-control mb-3" placeholder="Add your labels" />
-                                       <a href="#"> <i className="ri-add-line"></i></a>
+                                        <a href="#"> <i className="ri-add-line"></i></a>
 
                                     </div>
                                     <ul className="hash d-flex">
@@ -81,7 +52,7 @@ const Addpost = ({ placeholder }) => {
                                     <div className="form-group">
                                         <label>Labels</label>
                                         <input type="text" className="form-control mb-3" placeholder="Add your keywords" />
-                                       <a href="#"> <i className="ri-add-line"></i></a>
+                                        <a href="#"> <i className="ri-add-line"></i></a>
 
                                     </div>
                                     <ul className='d-flex align-items-center key'>
@@ -96,14 +67,7 @@ const Addpost = ({ placeholder }) => {
                         </div>
                         <div className="col-lg-6">
                             <label className="main add-form" >Main banner</label>
-                            <Dragger {...props}>
-                                <p className="ant-upload-drag-icon">
-                                    <InboxOutlined />
-                                </p>
-                                <p className="ant-upload-text">Drop files or click here to upload</p>
-
-                            </Dragger>
-
+                            <Uploads />
                         </div>
                     </div>
                     <div className="row">
