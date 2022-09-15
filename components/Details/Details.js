@@ -1,8 +1,24 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import detailsImg from '../../public/images/details.svg';
+import userImg from '../../public/images/user/1.svg';
 import Articel from '../Article/Articel';
-import Image from 'next/image';
 const Details = () => {
+
+
+    const details = {
+        title: "In nec arcu vel sem porttitor elementum ac vitae enim.",
+        date: "September 02, 202200",
+        user: " Morbi Tristique",
+        hash: ['CRYPTO', 'NFT', 'EVENT', 'NEWS'],
+        url: detailsImg,
+        userUrl: userImg,
+        desc: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores? Dolorem, molestiae! Voluptas non nemo adipisci ut explicabo, voluptatem omnis accusamus, harum corporis fugit impedit voluptate ipsa ab dolor hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores? Dolorem, molestiae! Voluptas non nemo adipisci ut explicabo, voluptatem omnis accusamus, harum corporis fugit impedit voluptate ipsa ab dolor hic!Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores? Dolorem, molestiae! Voluptas non nemo adipisci ut explicabo, voluptatem omnis accusamus, harum corporis fugit impedit voluptate ipsa ab dolor hic!Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores? Dolorem, molestiae! Voluptas non nemo adipisci ut explicabo, voluptatem omnis accusamus, harum corporis fugit impedit voluptate ipsa ab dolor hic!',
+        keywords: ['DONEC', 'QUIS', 'ARCU', 'VELIT', 'PRETIUM'],
+
+    };
+
     return (
         <>
             <div className="details-area">
@@ -14,19 +30,20 @@ const Details = () => {
                                     <a className='back' href="#"><i className="ri-arrow-left-s-line"></i> Back to previous page</a>
                                 </Link>
                                 <div className="img">
-                                    <Image src="/images/details.svg" widthalt="" title="details" width="100%" height="100%" layout="responsive" objectFit="cover"/>
+                                    <Image src={detailsImg} widthalt="" title="details" width="100%" height="100%" layout="responsive" objectFit="cover" />
 
                                 </div>
                                 <div className="content">
-                                    <h3>In nec arcu vel sem porttitor elementum ac vitae enim.</h3>
-                                    <span>September 02, 2022</span>
+                                    <h3>{details.title}</h3>
+                                    <span>{details.date}</span>
                                     <div className="row align-items-center mt-2">
                                         <div className="col-lg-5 col-md-5">
                                             <div className="profile">
                                                 <Link href="/profile">
-                                                    <a href="#">
-                                                        <img src="/images/user/1.png" alt="user" />
-                                                        Morbi Tristique
+                                                    <a href="#" className='d-flex align-items-center'>
+                                                        <Image src={userImg} width="40" height="40" />
+
+                                                        <span className='ms-2'>{details.user}</span>
                                                     </a>
                                                 </Link>
                                             </div>
@@ -34,34 +51,29 @@ const Details = () => {
                                         </div>
                                         <div className="col-lg-7 col-md-7">
                                             <ul className="hash d-flex">
-                                                <li><span>CRYPTO</span></li>
-                                                <li><span>NFT</span></li>
-                                                <li><span>EVENT</span></li>
-                                                <li><span>NEWS</span></li>
+
+                                                {details.hash.map((hash, index) =>
+
+                                                    <li key={index}>
+                                                        <span>{hash}</span>
+                                                    </li>
+                                                )
+                                                }
                                             </ul>
                                         </div>
                                         <div className="desc mt-3">
-                                            <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores? Dolorem, molestiae! Voluptas non nemo adipisci ut explicabo, voluptatem omnis accusamus, harum corporis fugit impedit voluptate ipsa ab dolor hic!
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores? Dolorem, molestiae! Voluptas non nemo adipisci ut explicabo, voluptatem omnis accusamus, harum corporis fugit impedit voluptate ipsa ab dolor hic!
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores? Dolorem, molestiae! Voluptas non nemo adipisci ut explicabo, voluptatem omnis accusamus, harum corporis fugit impedit voluptate ipsa ab dolor hic!
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolores? Dolorem, molestiae! Voluptas non nemo adipisci ut explicabo, voluptatem omnis accusamus, harum corporis fugit impedit voluptate ipsa ab dolor hic!
-                                            </p>
-                                            <p>
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sed voluptatibus temporibus debitis, exercitationem consequuntur tempora aliquam aspernatur molestiae nisi reiciendis tempore esse a! Eos magnam maiores corrupti saepe atque.lorem
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sed voluptatibus temporibus debitis, exercitationem consequuntur tempora aliquam aspernatur molestiae nisi reiciendis tempore esse a! Eos magnam maiores corrupti saepe atque.lorem
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sed voluptatibus temporibus debitis, exercitationem consequuntur tempora aliquam aspernatur molestiae nisi reiciendis tempore esse a! Eos magnam maiores corrupti saepe atque.lorem
-                                            </p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur animi ipsum ex saepe ut! Molestiae possimus quam numquam repellendus ipsum unde id nisi odit quia, pariatur magnam vitae recusandae consectetur?</p>
-
+                                            <p>{details.desc}</p>
+                                            <p>{details.desc}</p>
 
                                             <ul className='d-flex align-items-center key'>
                                                 <li><h3>Keywords:</h3></li>
-                                                <li><span>DONEC</span></li>
-                                                <li><span>QUIS</span></li>
-                                                <li><span>ARCU</span></li>
-                                                <li><span>VELIT</span></li>
-                                                <li><span>PRETIUM</span></li>
+                                                {details.keywords.map((keywords, index) =>
+
+                                                    <li key={index}>
+                                                        <span>{keywords}</span>
+                                                    </li>
+                                                )
+                                                }
                                             </ul>
                                         </div>
                                     </div>
@@ -75,10 +87,6 @@ const Details = () => {
                             </div>
                             <div className="articel">
                                 <h3>Latest <span>Article</span></h3>
-                                <Articel />
-                                <Articel />
-                                <Articel />
-                                <Articel />
                                 <Articel />
                             </div>
                         </div>
