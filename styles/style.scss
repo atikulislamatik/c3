@@ -364,7 +364,7 @@ textarea {
         .img {
             height: 400px;
             width: 100%;
-            overflow: hidden;
+            // overflow: hidden;
 
             img {
                 width: 100%;
@@ -408,6 +408,8 @@ textarea {
                 a {
                     color: #fff;
                     font-size: 16px;
+                    display: flex;
+                    align-items: center;
                 }
 
                 .arrow-btn {
@@ -427,9 +429,9 @@ textarea {
     }
 
 
-    .swiper-button-next {
-        top: -15%;
-        right: 65px;
+    button.slick-arrow.slick-next {
+        top: -23%;
+        right: 75px;
         border: 1px solid $main-color;
         width: 45px;
         height: 45px;
@@ -437,21 +439,16 @@ textarea {
         background: $main-color;
     }
 
-    .swiper-button-prev {
-        top: -63px;
-        left: 85%;
+    button.slick-arrow.slick-prev {
+        top: -100px;
+        left: 83%;
         border: 1px solid $main-color;
         width: 45px;
         transform: rotate(-45deg);
         height: 45px;
         background: $main-color;
-    }
-
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-        font-size: 20px;
-        font-weight: 500;
-        color: #fff;
+        background: transparent;
+        border: 1px solid #fff;
     }
 
     .swiper-button-next.swiper-button-disabled,
@@ -461,25 +458,19 @@ textarea {
         border: 1px solid #fff;
     }
 
-    .swiper-button-prev:after,
-    .swiper-rtl .swiper-button-next:after {
-        content: "\ea60" !important;
+
+    .slick-prev:before {
+        content: "\ea66" !important;
         font-family: 'remixicon' !important;
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
+
     }
 
-    .swiper-button-next:after,
-    .swiper-rtl .swiper-button-prev:after {
-        content: "\ea6c";
+    .slick-next:before {
+        content: "\ea6a";
         transform: rotate(45deg);
         font-family: 'remixicon' !important;
     }
-
-    .swiper {
-        overflow: hidden !important;
-        overflow-x: clip !important;
-    }
-
 }
 
 // Tranding

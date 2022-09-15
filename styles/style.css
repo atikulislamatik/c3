@@ -365,7 +365,6 @@ textarea.form-control {
 .banner-area .single-swiper .img {
   height: 400px;
   width: 100%;
-  overflow: hidden;
 }
 
 .banner-area .single-swiper .img img {
@@ -410,6 +409,12 @@ textarea.form-control {
 .banner-area .single-swiper .content .profile a {
   color: #fff;
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner-area .single-swiper .content .profile .arrow-btn {
@@ -425,9 +430,9 @@ textarea.form-control {
   margin-left: 5px;
 }
 
-.banner-area .swiper-button-next {
-  top: -15%;
-  right: 65px;
+.banner-area button.slick-arrow.slick-next {
+  top: -23%;
+  right: 75px;
   border: 1px solid #EB7F1B;
   width: 45px;
   height: 45px;
@@ -436,22 +441,17 @@ textarea.form-control {
   background: #EB7F1B;
 }
 
-.banner-area .swiper-button-prev {
-  top: -63px;
-  left: 85%;
+.banner-area button.slick-arrow.slick-prev {
+  top: -100px;
+  left: 83%;
   border: 1px solid #EB7F1B;
   width: 45px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   height: 45px;
   background: #EB7F1B;
-}
-
-.banner-area .swiper-button-next:after,
-.banner-area .swiper-button-prev:after {
-  font-size: 20px;
-  font-weight: 500;
-  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
 }
 
 .banner-area .swiper-button-next.swiper-button-disabled,
@@ -461,25 +461,18 @@ textarea.form-control {
   border: 1px solid #fff;
 }
 
-.banner-area .swiper-button-prev:after,
-.banner-area .swiper-rtl .swiper-button-next:after {
-  content: "\ea60" !important;
+.banner-area .slick-prev:before {
+  content: "\ea66" !important;
   font-family: 'remixicon' !important;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
-.banner-area .swiper-button-next:after,
-.banner-area .swiper-rtl .swiper-button-prev:after {
-  content: "\ea6c";
+.banner-area .slick-next:before {
+  content: "\ea6a";
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   font-family: 'remixicon' !important;
-}
-
-.banner-area .swiper {
-  overflow: hidden !important;
-  overflow-x: clip !important;
 }
 
 .back {

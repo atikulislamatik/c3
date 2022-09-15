@@ -1,4 +1,6 @@
 import "antd/dist/antd.css";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../styles/bootstrap.min.css";
