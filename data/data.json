@@ -170,5 +170,46 @@
             "dsc": "Your description event in here",
             "url": "/images/events/6.svg"
         }
+    ],
+    "slider": [
+        {
+            "id": 1,
+            "title": "In nec arcu vel sem porttitor elementum ac vitae enim.",
+            "date": "September 02, 2022",
+            "user": "Morbi Tristique",
+            "url": "/images/banner.svg",
+            "userImg": "/images/users/1.svg"
+        },
+        {
+            "id": 2,
+            "title": "In nec arcu vel sem porttitor elementum ac vitae enim.",
+            "date": "September 02, 2022",
+            "user": "Elementum",
+            "url": "/images/banner1.jpg",
+            "userImg": "/images/users/2.svg"
+        }
+    ],
+    "writers":[
+        {
+            "id": 1,
+            "uid" :"01",
+            "name": "Morbi Tristique",
+            "user": "morbitristique",
+            "userImg": "/images/users/1.svg"
+        },
+        {
+            "id": 2,
+            "uid" :"02",
+            "name": "Kuthindieng",
+            "user": "kuthindieng",
+            "userImg": "/images/users/2.svg"
+        }
+        ,{
+            "id": 3,
+            "uid" :"03",
+            "name": "Vactery",
+            "user": "vactery",
+            "userImg": "/images/users/3.svg"
+        }
     ]
 }

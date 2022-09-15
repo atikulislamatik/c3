@@ -1,4 +1,5 @@
 import { Modal } from 'antd';
+import Data from './Data'
 import {
     CategoryScale, Chart as ChartJS, LinearScale, LineElement, PointElement
 } from 'chart.js';

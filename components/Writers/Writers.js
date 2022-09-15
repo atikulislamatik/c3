@@ -1,6 +1,12 @@
 import AOS from 'aos';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import data from '../../data/data.json';
+
 const Writers = () => {
+
+    const [writers, setWriters] = useState(data.writers);
+
+
     useEffect(() => {
         AOS.init({
             duration: 1000
@@ -18,51 +24,27 @@ const Writers = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-4">
-                            <div className="single-item" data-aos="fade-in">
-                                <div className="img">
-                                    <img src="/images/user/1.svg" alt="user" />
-                                    <div className="badge">
-                                        <div>01</div>
+                        {
+                            writers.map(writers =>
+                                <>
+                                    <div className="col-lg-4">
+                                        <div className="single-item" data-aos="fade-in">
+                                            <div className="img">
+                                                <img src={writers.userImg} alt="user" />
+                                            
+                                                <div className="badge">
+                                                    <div>{writers.uid}</div>
+                                                </div>
+                                            </div>
+                                            <div className="content">
+                                                <h3>{writers.name}</h3>
+                                                <span>@{writers.user}</span>
+                                            </div>
+                                            <a href="#" className="box-btn black">Read More <i className="ri-arrow-right-s-line"></i></a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="content">
-                                    <h3>Morbi Tristique</h3>
-                                    <span>@morbitristique</span>
-                                </div>
-                                <a href="#" className="box-btn black">Read More <i className="ri-arrow-right-s-line"></i></a>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="single-item" data-aos="fade-in">
-                                <div className="img">
-                                    <img src="/images/user/2.svg" alt="user" />
-                                    <div className="badge">
-                                        <div>02</div>
-                                    </div>
-                                </div>
-                                <div className="content">
-                                    <h3>Kuthindieng</h3>
-                                    <span>@kuthindieng</span>
-                                </div>
-                                <a href="#" className="box-btn black">Read More <i className="ri-arrow-right-s-line"></i></a>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="single-item lc" data-aos="fade-in">
-                                <div className="img">
-                                    <img src="/images/user/3.svg" alt="user" />
-                                    <div className="badge">
-                                        <div>03</div>
-                                    </div>
-                                </div>
-                                <div className="content">
-                                    <h3>Vactery</h3>
-                                    <span>@vactery</span>
-                                </div>
-                                <a href="#" className="box-btn black">Read More <i className="ri-arrow-right-s-line"></i></a>
-                            </div>
-                        </div>
+                                </>)
+                        }
                         <div className="shape" data-aos="fade-in">
                             <img src="/images/shape/black.svg" alt="shape" />
                         </div>

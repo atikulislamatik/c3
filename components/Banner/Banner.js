@@ -1,12 +1,9 @@
 
-import React from 'react';
-import Slider from "react-slick";
-// import { Autoplay, Navigation } from "swiper";
-// import { Swiper, SwiperSlide } from "swiper/react";
 import Image from 'next/image';
 import Link from 'next/link';
-// import "./slick.css";
-// import styles from "./slick.module.css";
+import Slider from "react-slick";
+import React, { useEffect, useState } from 'react';
+import data from '../../data/data.json';
 const Banner = () => {
     const settings = {
         dots: false,
@@ -18,6 +15,7 @@ const Banner = () => {
         autoplay: true,
     };
 
+    const [slider, setSlider] = useState(data.slider);
 
 
     return (
@@ -36,63 +34,41 @@ const Banner = () => {
                             <div className="col-lg-12">
                                 <div className="swiper-slider-container">
                                     <Slider {...settings}>
-                                        <div className="single-swiper">
-                                            <div className="row">
-                                                <div className="col-lg-8">
-                                                    <div className="img">
-                                                        <Image src="/images/banner.svg" widthalt="" title="" width="750" height="400" layout="responsive" objectFit="cover" />
 
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-4">
-                                                    <div className="content">
-                                                        <h3>In nec arcu vel sem porttitor elementum ac vitae enim.</h3>
-                                                        <span>September 02 , 2022</span>
-                                                        <div className="profile">
+                                        {
+                                            slider.map(slider =>
+                                                <>
+                                                    <div className="single-swiper">
+                                                        <div className="row">
+                                                            <div className="col-lg-8">
+                                                                <div className="img">
+                                                                    <Image src={slider.url} widthalt="" title="" width="750" height="400" layout="responsive" objectFit="cover" />
 
-                                                            <Link href="/profile">
-                                                                <a href="">
-                                                                    <img src="/images/user/1.png" alt="user" />
-                                                                    Morbi Tristique
-                                                                </a>
-                                                            </Link>
-                                                            <hr />
+                                                                </div>
+                                                            </div>
+                                                            <div className="col-lg-4">
+                                                                <div className="content">
+                                                                    <h3>{slider.title}</h3>
+                                                                    <span>{slider.date}</span>
+                                                                    <div className="profile">
 
-                                                            <a className="arrow-btn" href="#">Read more <i className="ri-arrow-right-s-line"></i></a>
+                                                                        <Link href="/profile">
+                                                                            <a href="">
+                                                                                <Image src={slider.userImg} width="40" height="40" />
+                                                                                <span>{slider.user}</span>
+                                                                            </a>
+                                                                        </Link>
+                                                                        <hr />
+
+                                                                        <a className="arrow-btn" href="#">Read more <i className="ri-arrow-right-s-line"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div className="single-swiper">
-                                            <div className="row">
-                                                <div className="col-lg-8">
-                                                    <div className="img">
-                                                        <Image src="/images/banner1.jpg" widthalt="" title="" width="750" height="400" layout="responsive" objectFit="cover" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-4">
-                                                    <div className="content">
-                                                        <h3>In nec arcu vel sem porttitor elementum ac vitae enim.</h3>
-
-                                                        <span>September 02 , 2022</span>
-                                                        <div className="profile">
-
-                                                            <Link href="/profile">
-                                                                <a href="">
-                                                                    <img src="/images/user/1.png" alt="user" />
-                                                                    Morbi Tristique
-                                                                </a>
-                                                            </Link>
-                                                            <hr />
-
-                                                            <a className="arrow-btn" href="#">Read more <i className="ri-arrow-right-s-line"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                </>)
+                                        }
                                     </Slider>
                                 </div>
                             </div>
@@ -107,66 +83,3 @@ const Banner = () => {
 
 export default Banner;
 
-
-{/* <Swiper navigation={true} autoplay={{
-                                        delay: 3500,
-                                        disableOnInteraction: false,
-                                    }} modules={[Autoplay, Navigation]} className="mySwiper">
-                                        <SwiperSlide className='single-swiper'>
-                                            <div className="row">
-                                                <div className="col-lg-8">
-                                                    <div className="img">
-                                                        <Image src="/images/banner.svg" widthalt="" title="" width="735" height="400" layout="responsive" objectFit="cover" />
-
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-4">
-                                                    <div className="content">
-                                                        <h3>In nec arcu vel sem porttitor elementum ac vitae enim.</h3>
-                                                        <span>September 02 , 2022</span>
-                                                        <div className="profile">
-
-                                                            <Link href="/profile">
-                                                                <a href="">
-                                                                    <img src="/images/user/1.png" alt="user" />
-                                                                    Morbi Tristique
-                                                                </a>
-                                                            </Link>
-                                                            <hr />
-
-                                                            <a className="arrow-btn" href="#">Read more <i className="ri-arrow-right-s-line"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </SwiperSlide>
-
-                                        <SwiperSlide className='single-swiper'>
-                                            <div className="row">
-                                                <div className="col-lg-8">
-                                                    <div className="img">
-                                                        <Image src="/images/banner1.jpg" widthalt="" title="" width="735" height="400" layout="responsive" objectFit="cover" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-4">
-                                                    <div className="content">
-                                                        <h3>In nec arcu vel sem porttitor elementum ac vitae enim.</h3>
-
-                                                        <span>September 02 , 2022</span>
-                                                        <div className="profile">
-
-                                                            <Link href="/profile">
-                                                                <a href="">
-                                                                    <img src="/images/user/1.png" alt="user" />
-                                                                    Morbi Tristique
-                                                                </a>
-                                                            </Link>
-                                                            <hr />
-
-                                                            <a className="arrow-btn" href="#">Read more <i className="ri-arrow-right-s-line"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </SwiperSlide>
-                                    </Swiper> */}
